@@ -5,7 +5,7 @@ import NavStyles from './styles/NavStyles';
 export default function Nav() {
   return (
     <NavStyles>
-      <LinkScroll class="brand" smooth spy to="home">Baloi Radu</LinkScroll>
+      <LinkScroll className="brand" smooth spy to="home">Baloi Radu</LinkScroll>
       <ul>
         <li>
           <LinkScroll smooth spy to="home" offset={-70}>
