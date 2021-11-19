@@ -5,6 +5,7 @@ const HomeStyles = styled.section`
   padding: 10rem 0 0 0;
   width: 100vw;
   height: 100%;
+  color: #fff;
 `;
 
 export default HomeStyles

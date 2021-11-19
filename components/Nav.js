@@ -5,7 +5,7 @@ import NavStyles from './styles/NavStyles';
 export default function Nav() {
   return (
     <NavStyles>
-      <LinkScroll smooth spy to="home">Baloi Radu</LinkScroll>
+      <LinkScroll class="brand" smooth spy to="home">Baloi Radu</LinkScroll>
       <ul>
         <li>
           <LinkScroll smooth spy to="home" offset={-70}>
@@ -28,7 +28,7 @@ export default function Nav() {
           </LinkScroll>
         </li>
         <li>
-          <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer">RESUME</a>
+          <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer">Resume</a>
         </li>
       </ul>
     </NavStyles>

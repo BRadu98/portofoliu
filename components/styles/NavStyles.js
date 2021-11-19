@@ -25,6 +25,10 @@ const NavStyles = styled.nav`
     padding: 1rem 2rem;
     color: white;
   }
+
+  .brand {
+    font-weight: 550;
+  }
 `;
 
 export default NavStyles
