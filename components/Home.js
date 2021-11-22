@@ -20,7 +20,7 @@ export default function Home() {
               <Image
         src={coding}
         alt="coding"
-        // layout='responsive'
+        layout='responsive'
       />
             </div>
           </div>

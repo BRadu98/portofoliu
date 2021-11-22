@@ -10,14 +10,21 @@ const HomeStyles = styled.section`
   .fx-row {
     display: flex;
     gap: 1rem;
+    @media(max-width: 800px) {
+      flex-direction: column;
+    }
   }
   .w50 {
     min-width: 340px;
+    @media(min-width: 1500px) {
+      min-width: 500px;
+    }
   }
   .intro {
     font-size: 2rem;
     display: inline-block;
     font-weight: 700;
+    margin-top: 2rem; //?
   }
   .descr {
     display: block;
