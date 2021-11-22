@@ -1,12 +1,13 @@
 import Head from 'next/head'
-import HomeStyles from '../components/styles/HomeStyles'
-import AboutStyles from '../components/styles/AboutStyles'
-import ProjectsStyles from '../components/styles/ProjectsStyles'
-import ContactStyles from '../components/styles/ContactStyles'
+import Home from '../components/Home'
+import Projects from '../components/Projects'
+import About from '../components/About'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import BgTopStyles from '../components/styles/BgTopStyles'
 import BgBotStyles from '../components/styles/BgBotStyles'
 
-export default function Home() {
+export default function App() {
   return (
     <div>
       <Head>
@@ -15,27 +16,21 @@ export default function Home() {
       </Head>
 
       <main >
-        <HomeStyles id="home">Hey Im Radu</HomeStyles>
+        <Home id="home"></Home>
         <BgBotStyles/>
         
-
-
-
-        <AboutStyles id="about">ABOUT ME</AboutStyles>
-
+        <About id="about"></About>
 
         <BgTopStyles/>
-        <ProjectsStyles id="projects">PROJECTS</ProjectsStyles>
+        <Projects id="projects"></Projects>
         <BgBotStyles/>
 
         <BgTopStyles/>
-        <ContactStyles id="contact">CONTACT</ContactStyles>
+        <Contact id="contact"></Contact>
         <BgBotStyles/>
       </main>
 
-      <footer>
-          Other links: github linkedin
-      </footer>
+      <Footer/>
       <BgTopStyles/>
     </div>
   )

@@ -5,7 +5,6 @@ import Nav from './Nav';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --maxWidth: 2250px;
     --main: #f20408;
     --green: #24ef04;
   }
@@ -48,7 +47,6 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const InnerStyles = styled.div`
-  /* max-width: var(--maxWidth); */
   margin: 0 auto;
 `;
 
