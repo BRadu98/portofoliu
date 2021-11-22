@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const About = styled.section`
+const AboutStyles = styled.section`
   
 `;
 
-export default About
+export default AboutStyles

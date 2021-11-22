@@ -5,16 +5,9 @@ import Nav from './Nav';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --black: #393939;
     --maxWidth: 2250px;
-    --bs: 0 12px 24px 0 rgba(0,0,0,0.09);
     --main: #f20408;
-    --loaderGradient: linear-gradient(
-        to right,
-        #ff3019 0%,
-        #e2b04a 50%,
-        #ff3019 100%
-      );
+    --green: #24ef04;
   }
 
   html, body {
@@ -30,6 +23,8 @@ const GlobalStyles = createGlobalStyle`
 
   a:hover {
     cursor: pointer;
+    color: var(--green);
+    border-bottom: 4px solid var(--green);
   }
 
   button {
@@ -47,7 +42,9 @@ const GlobalStyles = createGlobalStyle`
   ::placeholder {
   font-style: italic;
   }
-
+  section {
+    /* height: 100vh; */
+  }
 `;
 
 const InnerStyles = styled.div`
