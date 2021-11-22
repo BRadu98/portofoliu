@@ -11,7 +11,7 @@ export default function Home() {
         <div className="fx-row">
           <div className="w50">
             <div>
-              <span className="intro">Hey, I'm Radu</span>
+              <span className="intro">Hey, I am Radu</span>
               <span className="descr">An Junior Web Developer with a can-do attitude.</span>
             </div>
           </div>
