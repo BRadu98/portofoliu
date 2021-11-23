@@ -10,13 +10,13 @@ export default function Nav() {
         <LinkScroll className="brand" smooth spy to="home" offset={-170}>Baloi Radu</LinkScroll>
         <ul>
           <li>
-            <LinkScroll activeClass="active" smooth spy to="about" offset={-150}>
-              About
+            <LinkScroll activeClass="active" smooth spy to="key-projects" offset={-150}>
+              Key Projects
             </LinkScroll>
           </li>
           <li>
             <LinkScroll activeClass="active" smooth spy to="projects" offset={-170}>
-              Projects
+              All Projects
             </LinkScroll>
           </li>
           <li>

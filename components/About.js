@@ -1,13 +1,13 @@
-import AboutStyles from '../components/styles/AboutStyles'
+import KeyProjectsStyles from './styles/KeyProjectsStyles'
 import Container from './styles/ContainerStyles';
 
 
-export default function About() {
+export default function KeyProjects() {
   
   return (
-    <AboutStyles id="about">
-      <Container>A1</Container>
-      <Container>A2</Container>
-    </AboutStyles>
+    <KeyProjectsStyles id="key-projects">
+      <Container>KP1</Container>
+      <Container>KP2</Container>
+    </KeyProjectsStyles>
   );
 }
