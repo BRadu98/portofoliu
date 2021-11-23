@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
-import About from '../components/About'
+import KeyProjects from '../components/KeyProjects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import BgTopStyles from '../components/styles/BgTopStyles'
@@ -19,7 +19,7 @@ export default function App() {
         <Home/>
         <BgBotStyles/>
         
-        <About/>
+        <KeyProjects/>
 
         <BgTopStyles/>
         <Projects/>
