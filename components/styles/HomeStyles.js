@@ -4,7 +4,8 @@ const HomeStyles = styled.section`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 6rem 0 0 0; //10rem
   width: 100vw;
-  height: 100%;
+    /* height: 100%; */
+    /* height: 100vh; */
   color: #fff;
 
   .fx-row {

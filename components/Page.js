@@ -41,8 +41,26 @@ const GlobalStyles = createGlobalStyle`
   ::placeholder {
   font-style: italic;
   }
-  section {
-    /* height: 100vh; */
+  .scroll-arrow-btn {
+    display: block;
+    margin: 3rem auto 2rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+  }
+  .dark-arrow {
+    color: #2F2A61;
+    background-color: #fff;
+  }
+  .light-arrow {
+    color: #fff;
+    background-color: #2F2A61;
   }
 `;
 

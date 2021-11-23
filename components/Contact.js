@@ -5,7 +5,7 @@ import Container from './styles/ContainerStyles';
 export default function Contact() {
   
   return (
-    <ContactStyles>
+    <ContactStyles id="contact">
       <Container>C</Container>
     </ContactStyles>
   );

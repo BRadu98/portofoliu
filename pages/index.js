@@ -16,17 +16,17 @@ export default function App() {
       </Head>
 
       <main >
-        <Home id="home"></Home>
+        <Home/>
         <BgBotStyles/>
         
-        <About id="about"></About>
+        <About/>
 
         <BgTopStyles/>
-        <Projects id="projects"></Projects>
+        <Projects/>
         <BgBotStyles/>
 
         <BgTopStyles/>
-        <Contact id="contact"></Contact>
+        <Contact/>
         <BgBotStyles/>
       </main>
 

@@ -7,25 +7,20 @@ export default function Nav() {
   return (
     <NavStyles>
       <Container>
-        <LinkScroll className="brand" smooth spy to="home">Baloi Radu</LinkScroll>
+        <LinkScroll className="brand" smooth spy to="home" offset={-170}>Baloi Radu</LinkScroll>
         <ul>
           <li>
-            <LinkScroll activeClass="active" smooth spy to="home" offset={-70}>
-              Home
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll activeClass="active" smooth spy to="about" offset={-70}>
+            <LinkScroll activeClass="active" smooth spy to="about" offset={-150}>
               About
             </LinkScroll>
           </li>
           <li>
-            <LinkScroll activeClass="active" smooth spy to="projects" offset={-70}>
+            <LinkScroll activeClass="active" smooth spy to="projects" offset={-170}>
               Projects
             </LinkScroll>
           </li>
           <li>
-            <LinkScroll activeClass="active" smooth spy to="contact" offset={-70}>
+            <LinkScroll activeClass="active" smooth spy to="contact" offset={-170}>
               Contact
             </LinkScroll>
           </li>

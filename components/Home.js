@@ -6,7 +6,7 @@ import Container from './styles/ContainerStyles';
 export default function Home() {
   
   return (
-    <HomeStyles>
+    <HomeStyles id="home">
       <Container>
         <div className="fx-row">
           <div className="w50">
@@ -26,6 +26,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <Container><button className='scroll-arrow-btn dark-arrow'><span>&#8595;</span></button></Container>
     </HomeStyles>
   );
 }
