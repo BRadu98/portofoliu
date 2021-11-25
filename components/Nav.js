@@ -25,7 +25,7 @@ export default function Nav() {
             </LinkScroll>
           </li>
           <li>
-            <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer">Resume</a>
+            <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer noopener">Resume</a>
           </li>
         </ul>
       </Container>
