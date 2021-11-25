@@ -4,8 +4,8 @@ const NavStyles = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
   top: -5px;
   z-index: 2;
   height: 70px;
@@ -13,6 +13,11 @@ const NavStyles = styled.nav`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 0 1rem;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   
 
   ul {

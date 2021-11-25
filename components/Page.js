@@ -76,6 +76,23 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--green);
     color: black;
   }
+
+  //User
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* @media (hover) {
+  // primary pointing device,to avoid sticky hover on mobile 
+
+  something a:hover,
+  something ul li a:focus-within { }
+  } */
 `;
 
 
