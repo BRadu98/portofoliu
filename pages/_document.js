@@ -1,6 +1,5 @@
 import Document, { Html, Head, NextScript, Main } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import Script from 'next/script'
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
@@ -19,7 +18,6 @@ export default class MyDocument extends Document {
       <Html lang="en-EN">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <Script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></Script> 
       </Head>
         <body>
           <Main />
