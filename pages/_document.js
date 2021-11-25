@@ -15,7 +15,10 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en-EN">
-      <Head><link rel="icon" href="/favicon.ico" /></Head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></script>
+      </Head>
         <body>
           <Main />
           <NextScript />

@@ -2,6 +2,8 @@ import HomeStyles from '../components/styles/HomeStyles'
 import Image from 'next/image'
 import coding from '../public/coding.png'
 import Container from './styles/ContainerStyles';
+import { Link as LinkScroll } from "react-scroll";
+
 
 export default function Home() {
   
@@ -26,7 +28,10 @@ export default function Home() {
           </div>
         </div>
       </Container>
-      <Container><button className='scroll-arrow-btn dark-arrow'><span>&#8595;</span></button></Container>
+      <Container>
+      <LinkScroll  smooth spy to="footer" offset={-170} className="no-border"><button className='scroll-arrow-btn dark-arrow scroll-arrow'><span>&#8595;</span>
+        </button></LinkScroll>
+      </Container>
     </HomeStyles>
   );
 }

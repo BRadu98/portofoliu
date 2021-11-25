@@ -18,12 +18,19 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
+    border-radius: 6px;
   }
 
-  a:hover {
+  a:hover,
+  a:focus-within {
     cursor: pointer;
     color: var(--green);
     border-bottom: 4px solid var(--green);
+  }
+  
+  .no-border:hover,
+  .no-border:focus-within {
+    border: none;
   }
 
   button {
@@ -62,7 +69,15 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
     background-color: #2F2A61;
   }
+  .scroll-arrow:hover,
+  .scroll-arrow:focus-within,
+  .scroll-arrow span:hover,
+  .scroll-arrow span:focus-within {
+    background-color: var(--green);
+    color: black;
+  }
 `;
+
 
 const InnerStyles = styled.div`
   margin: 0 auto;
