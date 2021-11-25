@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
       <Html lang="en-EN">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></script>
+        <Script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></Script>
       </Head>
         <body>
           <Main />
