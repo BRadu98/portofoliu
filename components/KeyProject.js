@@ -1,8 +1,24 @@
 import React from 'react'
+import Image from 'next/image'
+import lesperanceKp from '../public/lesperance-kp.png'
 
-const KeyProject = ({project}) => {
+const KeyProject = ({project, index}) => {
   return (
-    <div>{project.name}</div>
+    <div className="keyProject">
+      <div className="kpImgContainer">
+        <Image
+          src={lesperanceKp}
+          alt="lesperance mock"
+          layout='responsive'
+          width="350"
+          height="700"
+        />
+      </div>
+      <div className="kpDetails">
+        <h3>{project.name} index {index}</h3>
+        <p>{project.description}</p>
+      </div>
+    </div>
   )
 }
 
