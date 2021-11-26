@@ -5,8 +5,10 @@ import Nav from './Nav';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --main: #f20408;
-    --green: #24ef04;
+    --main: #2F2A61; //purple
+    --secondary: #24ef04; //green
+    --white: #fff;
+    --black: black;
   }
 
   html, body {
@@ -24,8 +26,8 @@ const GlobalStyles = createGlobalStyle`
   a:hover,
   a:focus-within {
     cursor: pointer;
-    color: var(--green);
-    border-bottom: 4px solid var(--green);
+    color: var(--secondary);
+    border-bottom: 4px solid var(--secondary);
   }
   
   .no-border:hover,
@@ -65,19 +67,19 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
   }
   .dark-arrow {
-    color: #2F2A61;
-    background-color: #fff;
+    color: var(--main);
+    background-color: var(--white);
   }
   .light-arrow {
-    color: #fff;
-    background-color: #2F2A61;
+    color: var(--white);
+    background-color: var(--main);
   }
   .scroll-arrow:hover,
   .scroll-arrow:focus-within,
   .scroll-arrow span:hover,
   .scroll-arrow span:focus-within {
-    background-color: var(--green);
-    color: black;
+    background-color: var(--secondary);
+    color: var(--black);
   }
 
   //User

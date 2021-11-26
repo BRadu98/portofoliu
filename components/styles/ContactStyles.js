@@ -5,7 +5,7 @@ const ContactStyles = styled.section`
   width: 100vw;
   /* height: 100%; */
   height: 50vh;
-  color: #fff;
+  color: var(--white);
 `;
 
 export default ContactStyles

@@ -7,26 +7,32 @@ const KeyProjectsStyles = styled.section`
     justify-content: space-evenly;
     align-items: center;
     .kps-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
+    max-width: 1400px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 430px);
+    grid-gap: 5px;
+    @media(max-width: 900px) {
+    max-width: 340px;
+  }
    }
    .keyProject {
-     /* background-color: grey; */
-     margin: 1rem auto;
-     display: flex;
-     width: max(340px,50%);
-     gap: 3rem;
+     margin: 0.5rem auto;
+     text-align: center;
+     /* width: 100%; */
      padding: 2rem;
-     flex-wrap: wrap;
     .kps-heading {
         margin-top: 3rem;
     }
+    h3 {
+      color: var(--main);
+      margin-top: 0.70rem;
+    }
     .kpImgContainer {
-      flex:1;
+      
     }
     .kpDetails {
-      flex:1;
+    
     }
   }
 

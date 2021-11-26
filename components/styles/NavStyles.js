@@ -25,6 +25,7 @@ const NavStyles = styled.nav`
     justify-content: space-around;
     width: fit-content;
     align-items: center;
+    display:none; //FIX nav on mobile
   }
 
   a {
@@ -39,8 +40,8 @@ const NavStyles = styled.nav`
   }
 
   .active {
-    color: var(--green);
-    border-bottom: 4px solid var(--green);
+    color: var(--secondary);
+    border-bottom: 4px solid var(--secondary);
     position: relative;
   }
 `;

@@ -17,7 +17,7 @@ const ProjectsStyles = styled.section`
       margin-bottom: 30px
     }
     code {
-      color: var(--green);
+      color: var(--secondary);
       word-wrap: break-word;
       font-weight: 500;
       font-size: 1.15rem;
@@ -30,7 +30,7 @@ const ProjectsStyles = styled.section`
     width: 100%;
     .filterBtn {
       color: white;
-      border: 2px solid #fff;
+      border: 2px solid var(--white);
       background: none;
       padding: 0.75rem;
       border-radius: 6px;
@@ -39,15 +39,15 @@ const ProjectsStyles = styled.section`
     }
     .filterBtn:focus-within,
     .filterBtn:hover {
-      color: var(--green);
-      border-color: var(--green);
+      color: var(--secondary);
+      border-color: var(--secondary);
     }
   }
   .portofolioContainer {
-    border: 3px solid #fff;
+    border: 3px solid var(--white);
     border-radius: 6px;
     height: 800px;
-    width: 800px;
+    min-width:340px;
     margin: 1.5rem auto;
     align-self: center;
     display: grid;

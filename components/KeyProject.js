@@ -10,12 +10,12 @@ const KeyProject = ({project, index}) => {
           src={lesperanceKp}
           alt="lesperance mock"
           layout='responsive'
-          width="350"
-          height="700"
+          width="320"
+          height="640"
         />
       </div>
       <div className="kpDetails">
-        <h3>{project.name} index {index}</h3>
+        <h3>{project.name}</h3>
         <p>{project.description}</p>
       </div>
     </div>
