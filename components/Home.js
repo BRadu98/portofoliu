@@ -23,6 +23,7 @@ export default function Home() {
         src={coding}
         alt="coding"
         layout='responsive'
+        priority
       />
             </div>
           </div>

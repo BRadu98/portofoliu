@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
 const KeyProjectsStyles = styled.section`
-    /* height: 100%; */
-    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   .kps-heading {
+      margin-top: 3rem;
+   }
 `;
 
 export default KeyProjectsStyles

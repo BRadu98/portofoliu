@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
 
   button {
     font-family:  --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
   }
 
   ul {
@@ -42,9 +43,11 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-  h1 {
-    color: green;
+  h2 {
+      font-weight: 700;
+      font-size: 3rem;
   }
+
   ::placeholder {
   font-style: italic;
   }
