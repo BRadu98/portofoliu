@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   margin-right: auto;
   margin-left: auto;
-  /* padding-right: 0.75rem;
-  padding-left: 0.75rem; */ //FIX PADDING?
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;  //FIX PADDING?
   display: flex;
   justify-content:center;
 

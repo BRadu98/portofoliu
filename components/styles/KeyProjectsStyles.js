@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const KeyProjectsStyles = styled.section`
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -10,8 +10,8 @@ const KeyProjectsStyles = styled.section`
     max-width: 1400px;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 430px);
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 340px);
+    grid-gap: 2.5rem;
     @media(max-width: 900px) {
     max-width: 340px;
   }
@@ -19,8 +19,11 @@ const KeyProjectsStyles = styled.section`
    .keyProject {
      margin: 0.5rem auto;
      text-align: center;
-     /* width: 100%; */
-     padding: 2rem;
+     max-width: 250px;
+     padding: 1.5rem;
+     /* border: 4px solid var(--main); */
+     box-shadow: 0 0 5px 4px var(--main);
+     border-radius: 6px;
     .kps-heading {
         margin-top: 3rem;
     }

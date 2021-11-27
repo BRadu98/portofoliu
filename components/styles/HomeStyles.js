@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const HomeStyles = styled.section`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 6rem 0 0 0; //10rem
-  width: 100vw;
+  /* width: 100vw; */
   color: var(--white);
 
   .fx-row {

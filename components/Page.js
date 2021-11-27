@@ -92,11 +92,14 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  /* @media (hover) {
+  /* @media (hover) { //fix
   // primary pointing device,to avoid sticky hover on mobile 
 
   something a:hover,
   something ul li a:focus-within { }
+  } */
+  /* * * * * * * {
+    background-color: red;
   } */
 `;
 
