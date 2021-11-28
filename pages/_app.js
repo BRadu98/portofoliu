@@ -9,12 +9,12 @@ import { NavStateProvider } from '../lib/navState'; //!UseContext
 function MyApp({ Component, pageProps }) {
   return (
     <SSRProvider>
-      <NavStateProvider>
+      {/* <NavStateProvider> */}
         <Page>
         <Script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></Script> 
         <Component {...pageProps} />
       </Page>
-      </NavStateProvider>
+      {/* </NavStateProvider> */}
     </SSRProvider>
 
   )
