@@ -15,6 +15,10 @@ export const FooterLinks = styled.div`
   justify-content: space-around;
   gap: 2rem;
 
+  @media(max-width: 600px) {
+    gap: 1.2rem;
+  }
+
   a {
     text-decoration: none;
     padding: 1.5rem;

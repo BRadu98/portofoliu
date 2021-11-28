@@ -12,9 +12,9 @@ const KeyProjectsStyles = styled.section`
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 340px);
     grid-gap: 2.5rem;
-    @media(max-width: 900px) {
-    max-width: 340px;
-  }
+    @media(max-width: 715px) {
+      max-width: 340px;
+    }
    }
    .keyProject {
      margin: 0.5rem auto;
