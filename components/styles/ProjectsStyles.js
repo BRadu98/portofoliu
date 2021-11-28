@@ -46,8 +46,8 @@ const ProjectsStyles = styled.section`
   .portofolioContainer {
     border: 3px solid var(--white);
     border-radius: 6px;
-    height: 800px;
-    min-width:340px;
+    height: 800px; //fix
+    min-width:340px; //fix
     margin: 1.5rem auto;
     align-self: center;
     display: grid;
