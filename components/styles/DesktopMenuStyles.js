@@ -15,6 +15,7 @@ const StyledDesktopMenu = styled.div`
     justify-content: space-around;
     width: fit-content;
     align-items: center;
+    gap:1rem;
   }
 
 

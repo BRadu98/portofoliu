@@ -15,7 +15,7 @@ const DesktopMenu = ({ visible }) => {
             </LinkScroll>
           </li>
           <li>
-            <LinkScroll activeClass="active" smooth spy to="projects" offset={-165}>
+            <LinkScroll activeClass="active" smooth spy to="projects" offset={-163}>
               All Projects
             </LinkScroll>
           </li>

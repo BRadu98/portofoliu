@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const KeyProjectsStyles = styled.section`
-    margin: 0 auto 4rem auto;
+    margin: 1.5rem auto 5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -17,7 +17,7 @@ const KeyProjectsStyles = styled.section`
     }
    }
    .keyProject {
-     margin: 0.5rem auto;
+     margin: 1rem auto;
      text-align: center;
      max-width: 250px;
      padding: 1.5rem;

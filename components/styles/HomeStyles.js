@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const HomeStyles = styled.section`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 6rem 0 0 0; //10rem
-  /* width: 100vw; */
   color: var(--white);
 
   .fx-row {
@@ -11,9 +10,12 @@ const HomeStyles = styled.section`
     gap: 1rem;
     @media(max-width: 800px) {
       flex-direction: column;
+      text-align: center;
     }
   }
   .w50 {
+    margin: 0 auto;
+    padding: 1rem;
     min-width: 340px;
     @media(min-width: 1500px) {
       min-width: 500px;

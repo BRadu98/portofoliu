@@ -33,7 +33,15 @@ const NavStyles = styled.nav`
 
   #nav-c {
     display: flex;
+    margin: 0 auto;
+    max-width: 1800px;
     width: 100%;
+    padding-left: 4rem;
+    padding-right: 6rem;
+
+    #fgrow {
+      flex-grow:1;
+    }
     
     @media(max-width: 723px) {
       align-items:space-around;
