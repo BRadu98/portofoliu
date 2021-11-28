@@ -2,7 +2,7 @@ import Document, { Html, Head, NextScript, Main } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
+  static getStaticProps({ renderPage }) {
     //! fixing css class names being different on server and client
     const sheet = new ServerStyleSheet();
     const page = renderPage((App) => (props) =>
