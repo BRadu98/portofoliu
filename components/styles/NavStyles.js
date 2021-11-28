@@ -3,9 +3,7 @@ import styled from 'styled-components';
 const NavStyles = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* position: -webkit-sticky;
-  position: sticky; */
+  justify-content: center; 
   top: -5px;
   z-index: 2;
   height: 70px;
@@ -25,13 +23,26 @@ const NavStyles = styled.nav`
     justify-content: space-around;
     width: fit-content;
     align-items: center;
-    display:none; //FIX nav on mobile
   }
 
   a {
     padding: 1rem 2rem;
     color: white;
     white-space: nowrap;
+  }
+
+  #nav-c {
+    display: flex;
+    width: 100%;
+    
+    @media(max-width: 723px) {
+      align-items:space-around;
+      justify-content:space-around;    
+      .brand {
+        transform: translateX(-30px)
+      }
+    }
+
   }
 
   .brand {

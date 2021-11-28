@@ -2,32 +2,28 @@
 import { Link as LinkScroll } from "react-scroll";
 import NavStyles from './styles/NavStyles';
 import Container from './styles/ContainerStyles';
+import { useNav } from '../lib/navState';
+import { useOnClickOutside } from '../lib/hooks';
+import {useRef} from 'react';
+import MobileMenu from './MobileMenu';
+import Burger from './Burger';
+import DesktopMenu from "./DesktopMenu";
+
+
 
 export default function Nav() {
+  const { showMobileMenu, setShowMobileMenu, renderMobileNav } = useNav();
+  console.log("show mobile menu:",showMobileMenu, "renderMobileNav:",renderMobileNav)
+  const node = useRef(); 
+  useOnClickOutside(node, () => setShowMobileMenu(false));
+
   return (
     <NavStyles>
-      <Container>
+      <Container id="nav-c">
         <LinkScroll className="brand" smooth spy to="home" offset={-170}>Baloi Radu</LinkScroll>
-        <ul>
-          <li>
-            <LinkScroll activeClass="active" smooth spy to="key-projects" offset={-150}>
-              Key Projects
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll activeClass="active" smooth spy to="projects" offset={-170}>
-              All Projects
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll activeClass="active" smooth spy to="contact" offset={-170}>
-              Contact
-            </LinkScroll>
-          </li>
-          <li>
-            <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer noopener">Resume</a>
-          </li>
-        </ul>
+        <DesktopMenu visible={!renderMobileNav}/>
+        <Burger open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
+        <MobileMenu open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
       </Container>
     </NavStyles>
   );
