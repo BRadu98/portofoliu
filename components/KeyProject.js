@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-//FIX
+//
 
 const KeyProject = ({project, index}) => {
   return (
@@ -11,8 +11,8 @@ const KeyProject = ({project, index}) => {
           src={project.mockImage[Object.keys(project.mockImage)[0]].src}
           alt="lesperance mock"
           layout='responsive'
-          width="320"
-          height="640"
+          width={320}
+          height={640}
          />
         )}
       </div>
