@@ -67,7 +67,7 @@ const ProjectsStyles = styled.section`
       width: 300px;
       height: 300px;
       border-radius: 10px;
-      border: 5px solid var(--secondary);
+      border: 5px solid var(--secondary); //gradient-p
       overflow: hidden;
     }
   

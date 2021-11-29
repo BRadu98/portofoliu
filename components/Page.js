@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #24ef04; //green
     --white: #fff;
     --black: black;
+    --gradient: linear-gradient(0deg, rgba(115,57,153,1) 35%, rgba(36,239,4,1) 100%);
   }
 
   html, body {
