@@ -52,7 +52,7 @@ const ProjectsStyles = styled.section`
     width: 80vw;
     align-self: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 2.5rem;
     gap: 2rem;
     place-items: center;

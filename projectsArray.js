@@ -1,4 +1,5 @@
-export const categories = [["web","Websites"],["apps","Apps"],["all","Show All"],["none","Hide All"]]
+export const categories = [["web","Web"],["py","Python"],["ios","iOS"],["all","Show All"],["none","Hide All"]]
+
 
 export const projectsArray = [
   {
@@ -63,9 +64,18 @@ export const projectsArray = [
     name: 'WebCrawler Hangman',
     liveLink: "immm",
     gitLink: "imm",
-    category: "web",
+    category: "py",
     image: "im",
     stack: ["Python"],
     description: "This project consists of two python scripts, one that crawls an website for quotes and their author, storing them in a csv and the other script uses this csv to promt the user to play hangman to find the author,the user gets a variety of hints for each failed guessing attempt",
+  },
+  {
+    name: 'Meditation App',
+    liveLink: "",
+    gitLink: "bit",
+    category: "ios",
+    image: "im",
+    stack: ["Swift","UiKit"],
+    description: "App for agregating and playing mp3 files and youtube videos",
   },
 ]
