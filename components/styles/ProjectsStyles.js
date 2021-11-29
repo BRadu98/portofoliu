@@ -46,11 +46,22 @@ const ProjectsStyles = styled.section`
   .portofolioContainer {
     border: 3px solid var(--white);
     border-radius: 6px;
-    height: 800px; //fix
-    min-width:340px; //fix
     margin: 1.5rem auto;
+    min-width: 300px;
+    max-width: 1250px;
+    width: 80vw;
     align-self: center;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 1.5rem;
+    gap: 1rem;
+    place-items: center;
+    div {
+      background-color:red;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
   }
 `;
 

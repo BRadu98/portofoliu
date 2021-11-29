@@ -20,10 +20,7 @@ function useWindowDimensions() {
     const debouncedResizeHandler = debounce(() => {
       if (window) {
         setDimension([window?.innerWidth, window?.innerHeight]);
-      } else {
-        console.log("noooo")
       }
-     
     }, 100); 
     window?.addEventListener('resize', debouncedResizeHandler);
     return () => window?.removeEventListener('resize', debouncedResizeHandler);
@@ -59,7 +56,7 @@ export default function Nav() {
       setShowMobileMenu(false)
     }
   },[windowWidth])
-  console.log("show mobile menu:",showMobileMenu, "renderMobileNav:",renderMobileNav)
+
   return (
     <NavStyles>
       <div id="nav-c">

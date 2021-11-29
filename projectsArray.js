@@ -1,4 +1,6 @@
-export let projectsArray = [
+export const categories = [["web","Websites"],["apps","Apps"],["all","Show All"],["none","Hide All"]]
+
+export const projectsArray = [
   {
     name: 'Online Shop',
     important: true,

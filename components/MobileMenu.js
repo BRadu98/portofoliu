@@ -4,7 +4,6 @@ import { Link as LinkScroll } from "react-scroll";
 
 
 const MobileMenu = ({open, visible}) => {
-  console.log("isopen",open)
   return (
     <>
     {visible && (<StyledMobileMenu open={open}>
