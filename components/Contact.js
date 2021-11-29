@@ -11,7 +11,7 @@ export default function Contact() {
           <div className="w50 contact-heading">
             <div>
             <p>Wanna hire me or just connect about an idea or opportunity?</p>
-            <p>Drop me a line - I'd love to talk.</p>
+            <p>Drop me a line - I&apos;d love to talk.</p>
             </div>
           </div>
           <div className="w50">

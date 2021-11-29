@@ -14,9 +14,9 @@ const ContactStyles = styled.section`
     }
   }
   .w50 {
-    padding: 1rem;
+    /* padding: 1rem; */
     min-width: 340px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     @media(min-width: 1000px) {
       width: 450px;
     }
@@ -31,7 +31,6 @@ const ContactStyles = styled.section`
     background-color: var(--white);
     filter: opacity(0.75);
     color: var(--main);
-    margin: 1rem;
     text-align: left;
     font-size: 1.7rem;
     font-weight: 500;
@@ -49,7 +48,7 @@ const ContactStyles = styled.section`
   .survey-form {
     margin: 0;
     font-size: 1.7rem;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     font-weight: 450;
     background-color: var(--white);
     color: var(--main);
