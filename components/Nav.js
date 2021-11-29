@@ -1,14 +1,12 @@
 
 import { Link as LinkScroll } from "react-scroll";
 import NavStyles from './styles/NavStyles';
-// import { useNav } from '../lib/navState';
-import { useOnClickOutside } from '../lib/hooks';
-import {useRef} from 'react';
+import { useOnClickOutside } from "../lib/useOnClickOutside";
 import MobileMenu from './MobileMenu';
 import Burger from './Burger';
 import DesktopMenu from "./DesktopMenu";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function useWindowDimensions() {
   let height = process.browser ? window.innerHeight : 360
@@ -39,13 +37,13 @@ function debounce(fn, ms) {
   };
 }
 
-export default function Nav() {
-  // const { showMobileMenu, setShowMobileMenu, renderMobileNav } = useNav();
- 
-  const node = useRef(); 
-  useOnClickOutside(node, () => setShowMobileMenu(false));
+export default function Nav() { 
+
   const [showMobileMenu, setShowMobileMenu] = useState(false)
   const [renderMobileNav, setRenderMobileNav] = useState(false)
+
+  const node = useRef(); 
+  useOnClickOutside(node, () => setShowMobileMenu(false));
 
   let windowWidth = 0;
   let windowHeight = 0;
@@ -59,12 +57,12 @@ export default function Nav() {
 
   return (
     <NavStyles>
-      <div id="nav-c">
+      <div id="nav-c" ref={node}>
         <LinkScroll className="brand" smooth spy to="home" offset={-170}>Baloi Radu</LinkScroll>
         <div id="fgrow"></div>
         <DesktopMenu visible={!renderMobileNav}/>
         <Burger open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
-        <MobileMenu open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
+        <MobileMenu open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav} ref={node}/>
       </div>
     </NavStyles>
   );
