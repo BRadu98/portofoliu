@@ -10,8 +10,8 @@ export default function Footer() {
       <Container className="footer-container-links">
         <FooterLinks>
           <a href="https://github.com/BRadu98" target="_blank"  rel="noreferrer noopener" className="light-arrow"><i className="fab fa-github"></i> Github</a>
-          <a href="https://www.linkedin.com/in/radu-baloi-543301156/" target="_blank" rel="noreferrer noopener" className="light-arrow"><i className="fab fa-linkedin"></i> Linkedin</a>
           <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer noopener" className="light-arrow"><i className="fas fa-file-pdf"></i> CV</a>
+          <a href="https://www.linkedin.com/in/radu-baloi-543301156/" target="_blank" rel="noreferrer noopener" className="light-arrow"><i className="fab fa-linkedin"></i> Linkedin</a>
         </FooterLinks>
       </Container>
       <Container>

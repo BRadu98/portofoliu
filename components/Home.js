@@ -14,7 +14,7 @@ export default function Home() {
           <div className="w50">
             <div>
               <span className="intro">Hey,&nbsp;&nbsp;I&apos;m Radu</span>
-              <span className="descr">An Junior Web Developer with a can-do attitude.</span>
+              <span className="descr">A Web Developer with a can-do attitude.</span>
             </div>
           </div>
           <div className="w50">
