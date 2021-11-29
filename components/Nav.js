@@ -62,7 +62,7 @@ export default function Nav() {
         <div id="fgrow"></div>
         <DesktopMenu visible={!renderMobileNav}/>
         <Burger open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
-        <MobileMenu open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav} ref={node}/>
+        <MobileMenu open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav} />
       </div>
     </NavStyles>
   );
