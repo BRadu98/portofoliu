@@ -56,12 +56,22 @@ const ProjectsStyles = styled.section`
     padding: 2.5rem;
     gap: 2rem;
     place-items: center;
+    @media(max-width: 768px) { 
+       padding: 2rem 0.75rem;
+    }
+
+    .projects {
+
+    }
     div {
-      background-color:red;
       width: 300px;
       height: 300px;
       border-radius: 10px;
+      border: 5px solid var(--secondary);
+      overflow: hidden;
     }
+  
+    
   }
 `;
 
