@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #24ef04; //green
     --white: #fff;
     --black: black;
-    --gradient: linear-gradient(0deg, rgba(115,57,153,1) 35%, rgba(36,239,4,1) 100%);
+    --gradient-p: linear-gradient(0deg, rgba(115,57,153,1) 35%, rgba(36,239,4,1) 100%);
   }
 
   html, body {
@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
   }
   .scroll-arrow-btn {
     display: block;
-    margin: 3rem auto 2rem;
+    margin: 1.5rem auto 0 auto;
     width: 4rem;
     height: 4rem;
     text-align: center;
