@@ -83,24 +83,25 @@ const ProjectsStyles = styled.section`
           position:absolute;
           width:100%;
           height:100%;
-          background-color: purple;
+          background-color: var(--white);
           transition:0.5s;
           z-index:1;
+          opacity: 85%;
         }
         .back-from-left {
           top:0;
           left:-100%;
-          background-color: red;
+          background-color: var(--main);
         }
         .back-from-bottom {
           top:100%;
           left:0;
-          background-color: blue;
+          background-color: var(--main);
         }
         .back-from-right {
           top:0%;
           right:-100%;
-          background-color: green;
+          background-color: var(--main);
         }
      }
      &:hover .content {
