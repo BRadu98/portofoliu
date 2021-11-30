@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
     border-radius: 6px;
+    -webkit-border-radius: 6px;
   }
 
   a:hover,
