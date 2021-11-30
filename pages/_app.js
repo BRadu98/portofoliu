@@ -7,6 +7,9 @@ import { NavStateProvider } from '../lib/navState'; //!UseContext
 
 
 function MyApp({ Component, pageProps }) {
+  if (process.browser) {
+    document.body.classList.add("loaded")
+}
   return (
     <SSRProvider>
       <NavStateProvider>

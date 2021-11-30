@@ -72,7 +72,6 @@ const ProjectsStyles = styled.section`
       width: 300px;
       height: 300px;
       border-radius: 10px;
-      /* border: 4px solid var(--secondary);  */
       box-shadow: 0 0 5px 5px var(--secondary);
       overflow: hidden;
       .content{
@@ -81,7 +80,7 @@ const ProjectsStyles = styled.section`
         position:relative;
         overflow:hidden;
         .back {
-        height: 150px;
+          height: 300px; //FIX
         }
         .back-from-left {
           top:0;
@@ -98,7 +97,7 @@ const ProjectsStyles = styled.section`
      &:hover .content {
        .back-from-left {
          left:0;
-         transform: translateY(-220px); //FIX
+         transform: translateY(-100%); //FIX
        }
        .back-from-bottom {
         top:0%;

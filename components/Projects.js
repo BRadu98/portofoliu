@@ -13,7 +13,7 @@ export default function Projects() {
   }
 
   return (
-    <ProjectsStyles>
+    <ProjectsStyles id="projects">
       <Container>
         <div className="portofolio-heading">
           <h2>All Projects</h2>
