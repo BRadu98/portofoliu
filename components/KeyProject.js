@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 //
 
-const KeyProject = ({project, index}) => {
+const KeyProject = ({project}) => {
   return (
     <div className="keyProject">
       <div className="kpImgContainer">
@@ -25,4 +25,3 @@ const KeyProject = ({project, index}) => {
 }
 
 export default KeyProject
-

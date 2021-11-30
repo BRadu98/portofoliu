@@ -1,9 +1,19 @@
 import Image from 'next/image'
 
-      
-const Project = ({project}) => {
+// type -> index % 3
+
+const Project = ({project, type}) => {
   return (
-    <div>
+    <div className="card">
+      <div className="content">
+        <div className="front">
+
+        </div>
+        <div className={`back-${type}`}>
+
+        </div>
+      </div>
+    
     {project.image && (
       <Image
         src={project.image[Object.keys(project.image)[0]].src}
@@ -15,8 +25,7 @@ const Project = ({project}) => {
       />
     )}
           
- 
-      </div>
+    </div>
   )
 }
 

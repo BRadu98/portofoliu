@@ -13,7 +13,7 @@ export default function Projects() {
   }
 
   return (
-    <ProjectsStyles className="projects">
+    <ProjectsStyles>
       <Container>
         <div className="portofolio-heading">
           <h2>All Projects</h2>
@@ -27,9 +27,9 @@ export default function Projects() {
       </Container>
       {selectedCategory !== "none" && <div className="portofolioContainer">
       {projectsArray.filter(project => {
-        return selectedCategory==="all" || project.category === selectedCategory}).map(project => <Project key={project.name} project={project}/>)}
+        return selectedCategory==="all" || project.category === selectedCategory}).map((project, index) => <Project key={project.name} project={project} type={index % 3}/>)}
       </div>}
-        
+
     </ProjectsStyles>
   );
 }

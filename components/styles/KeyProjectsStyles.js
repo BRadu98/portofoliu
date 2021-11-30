@@ -21,7 +21,7 @@ const KeyProjectsStyles = styled.section`
      text-align: center;
      max-width: 250px;
      padding: 1.5rem;
-     /* border: 4px solid var(--main); */
+
      box-shadow: 0 0 5px 4px var(--main);
      border-radius: 6px;
     .kps-heading {

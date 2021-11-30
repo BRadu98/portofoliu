@@ -48,7 +48,7 @@ const ProjectsStyles = styled.section`
     border-radius: 6px;
     margin: 1.5rem auto;
     min-width: 300px;
-    max-width: 1250px;
+    max-width: 1000px;
     width: 80vw;
     align-self: center;
     display: grid;
@@ -57,20 +57,36 @@ const ProjectsStyles = styled.section`
     gap: 2rem;
     place-items: center;
     @media(max-width: 768px) { 
-       padding: 2rem 0.75rem;
+       padding: 2rem 1rem;
     }
-
-    .projects {
-
+    @media(max-width: 1205px) { 
+       max-width: 650px;
+    } 
+    @media(max-width: 790px) { 
+       max-width: 320px;
     }
-    div {
+    
+
+
+    .card {
       width: 300px;
       height: 300px;
       border-radius: 10px;
       border: 5px solid var(--secondary); //gradient-p
       overflow: hidden;
     }
-  
+    .back-0 {
+      background-color: red;
+      height: 150px;
+    }
+    .back-1 {
+      background-color: blue;
+      height: 150px;
+    }
+    .back-2 {
+      background-color: green;
+      height: 150px;
+    }
     
   }
 `;
