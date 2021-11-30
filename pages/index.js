@@ -6,8 +6,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import BgTopStyles from '../components/styles/BgTopStyles'
 import BgBotStyles from '../components/styles/BgBotStyles'
-import Container from '../components/styles/ContainerStyles';
-
+import TechStack from '../components/TechStack'
 
 export default function App() {
   return (
@@ -27,8 +26,7 @@ export default function App() {
         <Projects/>
         <BgBotStyles/>
 
-      <Container>Something1</Container>
-      <Container>Something2</Container>
+        <TechStack/>
 
         <BgTopStyles/>
         <Contact/>
