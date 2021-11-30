@@ -3,9 +3,8 @@ import styled from 'styled-components';
 const FooterStyles = styled.footer`
   padding-top: 1rem;
   margin-top: 3rem;
-  height: 250px;
   .footer-container-links {
-    height:80px;
+    /* height:80px; */
   }
   button {
     margin: 2.5rem auto;
@@ -13,27 +12,31 @@ const FooterStyles = styled.footer`
 `;
 
 export const FooterLinks = styled.div`
-  width: 80%;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
+  flex-wrap: wrap;
 
   @media(max-width: 600px) {
-    gap: 1.2rem;
+    gap: 0.75rem;
   }
 
   a {
     text-decoration: none;
     padding: 1.5rem;
     transition: transform 0.4s ease-out;
+    transition: color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
     margin: 6px;
     text-align: center;
+    width: 8ch;
   }
   a:hover,
   a:focus-within {
     color: var(--black);
     background-color: var(--secondary);
     transform: translateY(5px);
+    border-bottom: none;
   }
 
 `;
