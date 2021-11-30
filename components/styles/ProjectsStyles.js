@@ -80,7 +80,12 @@ const ProjectsStyles = styled.section`
         position:relative;
         overflow:hidden;
         .back {
-          height: 300px; //FIX
+          position:absolute;
+          width:100%;
+          height:100%;
+          background-color: purple;
+          transition:0.5s;
+          z-index:1;
         }
         .back-from-left {
           top:0;
@@ -88,16 +93,19 @@ const ProjectsStyles = styled.section`
           background-color: red;
         }
         .back-from-bottom {
+          top:100%;
+          left:0;
           background-color: blue;
         }
         .back-from-right {
+          top:0%;
+          right:-100%;
           background-color: green;
         }
      }
      &:hover .content {
        .back-from-left {
          left:0;
-         transform: translateY(-100%); //FIX
        }
        .back-from-bottom {
         top:0%;
