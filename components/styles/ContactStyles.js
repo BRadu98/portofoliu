@@ -62,6 +62,7 @@ const ContactStyles = styled.section`
         padding: 0.75rem; 
         margin-top: 0.8rem;
         font-size: 1.25rem;
+        border-radius: 6px;
       }
     }
     .submit-button {
