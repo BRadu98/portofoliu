@@ -14,9 +14,7 @@ const ContactStyles = styled.section`
     }
   }
   .w50 {
-    /* padding: 1rem; */
     min-width: 340px;
-    /* border-radius: 6px; */
     @media(min-width: 1000px) {
       width: 450px;
     }
@@ -40,6 +38,9 @@ const ContactStyles = styled.section`
     p {
       padding: 2rem 1rem;
       text-align: center;
+      @media(max-width: 800px) { 
+        padding: 0.5rem 2rem;
+      }
     }
     div {
       margin: auto;
@@ -48,7 +49,6 @@ const ContactStyles = styled.section`
   .survey-form {
     margin: 0;
     font-size: 1.7rem;
-    /* border-radius: 6px; */
     font-weight: 450;
     background-color: var(--white);
     color: var(--main);
