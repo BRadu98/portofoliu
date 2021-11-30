@@ -62,6 +62,10 @@ const ContactStyles = styled.section`
         padding: 0.75rem; 
         margin-top: 0.8rem;
         font-size: 1.25rem;
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--main);
+        opacity: 1; /* Firefox */
+        }
       }
     }
     .submit-button {
