@@ -72,21 +72,43 @@ const ProjectsStyles = styled.section`
       width: 300px;
       height: 300px;
       border-radius: 10px;
-      border: 5px solid var(--secondary); //gradient-p
+      /* border: 4px solid var(--secondary);  */
+      box-shadow: 0 0 5px 5px var(--secondary);
       overflow: hidden;
+      .content{
+        width:100%;
+        height:100%;
+        position:relative;
+        overflow:hidden;
+        .back {
+        height: 150px;
+        }
+        .back-from-left {
+          top:0;
+          left:-100%;
+          background-color: red;
+        }
+        .back-from-bottom {
+          background-color: blue;
+        }
+        .back-from-right {
+          background-color: green;
+        }
+     }
+     &:hover .content {
+       .back-from-left {
+         left:0;
+         transform: translateY(-220px); //FIX
+       }
+       .back-from-bottom {
+        top:0%;
+       }
+       .back-from-right {
+        right:0;
+       }
+     }
     }
-    .back-0 {
-      background-color: red;
-      height: 150px;
-    }
-    .back-1 {
-      background-color: blue;
-      height: 150px;
-    }
-    .back-2 {
-      background-color: green;
-      height: 150px;
-    }
+
     
   }
 `;
