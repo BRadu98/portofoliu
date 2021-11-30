@@ -7,6 +7,9 @@ const FooterStyles = styled.footer`
   .footer-container-links {
     height:80px;
   }
+  button {
+    margin: 2.5rem auto;
+  }
 `;
 
 export const FooterLinks = styled.div`

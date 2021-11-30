@@ -13,9 +13,13 @@ const TechStackStyles = styled.section`
     min-width: calc(100% - 1.5rem);
     font-weight: 800;
     margin-bottom: 5rem;
+    align-items: center;
     & div:first-child,
     & div:nth-child(2) {
       font-size:1.2rem;
+    }
+    & div:last-child {
+      font-size: 0.8rem;
     }
   }
 `;

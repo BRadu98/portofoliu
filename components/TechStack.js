@@ -17,8 +17,8 @@ const TechStack = () => {
         <div>mongodb</div>
         <div>postgresql</div>
         <div>keystoneJS</div>
-        <div>git</div>
         <div>python3</div>
+        <div>git</div>
         <div>swift</div>
       </Container>
     </TechStackStyles>
