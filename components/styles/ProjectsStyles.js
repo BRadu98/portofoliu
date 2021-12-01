@@ -84,7 +84,7 @@ const ProjectsStyles = styled.section`
           background-color: var(--main);
           transition:0.5s;
           z-index:1;
-          opacity: 85%;
+          opacity: 95%;
           text-align: center;
           .project-details {
             display: flex;
@@ -96,6 +96,9 @@ const ProjectsStyles = styled.section`
             gap: 2rem;     
             & > * {
               height: 50px;
+            }
+            h4 {
+              transform: translateY(20px);
             }     
             h5 {
               margin: 0 auto;

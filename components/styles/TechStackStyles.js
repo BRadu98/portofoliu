@@ -10,7 +10,7 @@ const TechStackStyles = styled.section`
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    min-width: calc(100% - 1.5rem);
+    min-width: calc(100% - 4rem);
     font-weight: 800;
     margin-bottom: 5rem;
     align-items: center;
