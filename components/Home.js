@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </Container>
       <Container>
-      <LinkScroll smooth spy to="projects" offset={-170} className="no-border"><button className='scroll-arrow-btn dark-arrow scroll-arrow'><i className="fa fa-arrow-down" aria-hidden="true"></i>
+      <LinkScroll smooth spy to="projects" offset={-170} className="no-border"><button className='scroll-arrow-btn dark-arrow scroll-arrow' aria-label='down-arrow'><i className="fa fa-arrow-down" aria-hidden="true"></i>
         </button></LinkScroll>
       </Container>
     </HomeStyles>

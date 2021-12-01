@@ -15,7 +15,7 @@ export default function Footer() {
         </FooterLinks>
       </Container>
       <Container>
-      <LinkScroll  smooth spy to="home" offset={-170} className="no-border"><button className='scroll-arrow-btn light-arrow scroll-arrow'><i className="fa fa-arrow-up" aria-hidden="true"></i>
+      <LinkScroll  smooth spy to="home" offset={-170} className="no-border"><button className='scroll-arrow-btn light-arrow scroll-arrow' aria-label='up-arrow'><i className="fa fa-arrow-up" aria-hidden="true"></i>
         </button></LinkScroll>
       </Container>
     </FooterStyles>

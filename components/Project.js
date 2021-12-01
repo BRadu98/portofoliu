@@ -37,8 +37,8 @@ const Project = ({project, type}) => {
         </div>
         <div className={`back back-from-${direction}`}>
            <div className="project-details">
-              <h4>{project.name}</h4>
-              <h5>{stack}</h5>
+              <h3>{project.name}</h3>
+              <h4>{stack}</h4>
               <div className="projectBtnsContianer">
                 {live && !!live && (
                   <button className="projectBtn"><a href={live} target="_blank" rel="noreferrer noopener">Live</a></button>

@@ -97,10 +97,10 @@ const ProjectsStyles = styled.section`
             & > * {
               height: 50px;
             }
-            h4 {
+            h3 {
               transform: translateY(20px);
             }     
-            h5 {
+            h4 {
               margin: 0 auto;
             }
             .projectBtnsContianer{
