@@ -111,11 +111,15 @@ const ProjectsStyles = styled.section`
               align-items: flex-end;
               .projectBtn{
                 padding: 0.5rem;
+                font-size: 1.1rem;
                 border-radius: 6px;
                 background: var(--secondary);
                 color: black;
-                font-weight: 450;
+                font-weight: 650;
                 width: 40%;
+                a{
+                  color: black;
+                }
               }
             }
           }

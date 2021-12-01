@@ -17,6 +17,8 @@ const Project = ({project, type}) => {
   }
 
   let stack = project.stack.join(" | ")
+  let git = project.gitLink
+  let live = project.liveLink
   
   return (
     <div className="card">
@@ -38,11 +40,11 @@ const Project = ({project, type}) => {
               <h4>{project.name}</h4>
               <h5>{stack}</h5>
               <div className="projectBtnsContianer">
-                {project.liveLink && !!project.liveLink && (
-                  <button className="projectBtn"><a>Live</a></button>
+                {live && !!live && (
+                  <button className="projectBtn"><a href={live} target="_blank" rel="noreferrer noopener">Live</a></button>
                 )}
-                {project.gitLink && !!project.gitLink && (
-                  <button className="projectBtn"><a>Code</a></button>
+                {git && !!git && (
+                  <button className="projectBtn"><a href={git} target="_blank" rel="noreferrer noopener">Code</a></button>
                 )}
               </div>
            </div>

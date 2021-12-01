@@ -10,9 +10,9 @@ const KeyProject = ({project}) => {
           <Image
           src={project.mockImage[Object.keys(project.mockImage)[0]].src}
           alt="lesperance mock"
-          layout='responsive'
-          width={320}
-          height={640}
+        
+          width={275}
+          height={550}
          />
         )}
       </div>
