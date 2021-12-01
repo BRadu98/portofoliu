@@ -65,8 +65,6 @@ const ProjectsStyles = styled.section`
     @media(max-width: 790px) { 
        max-width: 320px;
     }
-    
-
 
     .card {
       width: 300px;
@@ -83,30 +81,58 @@ const ProjectsStyles = styled.section`
           position:absolute;
           width:100%;
           height:100%;
-          background-color: var(--white);
+          background-color: var(--main);
           transition:0.5s;
           z-index:1;
           opacity: 85%;
+          text-align: center;
+          .project-details {
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.5rem;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            gap: 2rem;     
+            & > * {
+              height: 50px;
+            }     
+            h5 {
+              margin: 0 auto;
+            }
+            .projectBtnsContianer{
+              width: 90%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              align-items: flex-end;
+              .projectBtn{
+                padding: 0.5rem;
+                border-radius: 6px;
+                background: var(--secondary);
+                color: black;
+                font-weight: 450;
+                width: 40%;
+              }
+            }
+          }
         }
         .back-from-left {
           top:0;
           left:-100%;
-          background-color: var(--main);
         }
         .back-from-bottom {
           top:100%;
           left:0;
-          background-color: var(--main);
         }
         .back-from-right {
           top:0%;
-          right:-100%;
-          background-color: var(--main);
+          right:-100%;         
         }
      }
      &:hover .content {
        .back-from-left {
-         left:0;
+        left:0;
        }
        .back-from-bottom {
         top:0%;
@@ -116,8 +142,6 @@ const ProjectsStyles = styled.section`
        }
      }
     }
-
-    
   }
 `;
 

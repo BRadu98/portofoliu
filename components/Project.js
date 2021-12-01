@@ -16,8 +16,8 @@ const Project = ({project, type}) => {
       break;
   }
 
-      
-
+  let stack = project.stack.join(" | ")
+  
   return (
     <div className="card">
       <div className="content">
@@ -29,12 +29,23 @@ const Project = ({project, type}) => {
           width={300} 
           height={300}
           layout="responsive"
-          objectFit="cover"
+          objectFit="fill"
         />
       )}
         </div>
         <div className={`back back-from-${direction}`}>
-
+           <div className="project-details">
+              <h4>{project.name}</h4>
+              <h5>{stack}</h5>
+              <div className="projectBtnsContianer">
+                {project.liveLink && !!project.liveLink && (
+                  <button className="projectBtn"><a>Live</a></button>
+                )}
+                {project.gitLink && !!project.gitLink && (
+                  <button className="projectBtn"><a>Code</a></button>
+                )}
+              </div>
+           </div>
         </div>
       </div>
     </div>
