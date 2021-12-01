@@ -12,18 +12,21 @@ export default class MyDocument extends Document {
     return { ...page, styleTags };
   }
 
+
+  //style to avoid flash
   render() {
-    //fontawesome icons
-    //style to avoid flash
     return (
       <Html lang="en-EN">
       <Head>
+        
         <link rel="icon" href="/favicon.ico" />
-        {<style dangerouslySetInnerHTML={{__html: `
+        
+        <style dangerouslySetInnerHTML={{__html: `
           html {background: #fff}
           body #__next div {visibility: hidden}
           body.loaded #__next div {visibility: visible}`}}>
-        </style>}
+        </style>
+
       </Head>
         <body>
           <Main />

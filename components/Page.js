@@ -53,8 +53,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   ::placeholder {
-  font-style: italic;
-  color: var(--main);
+    font-style: italic;
+    color: var(--main);
   }
   .scroll-arrow-btn {
     display: block;

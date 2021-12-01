@@ -99,9 +99,11 @@ const ProjectsStyles = styled.section`
             }
             h3 {
               transform: translateY(20px);
+              font-size: 1.5rem;
             }     
             h4 {
               margin: 0 auto;
+              font-size: 1rem;
             }
             .projectBtnsContianer{
               width: 90%;
