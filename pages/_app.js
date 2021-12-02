@@ -1,18 +1,19 @@
 import Page from "../components/Page"
 import Script from 'next/script'
 import { SSRProvider } from '@react-aria/ssr'; //!Fix class name diff
-import { NavStateProvider } from '../lib/navState'; //!UseContext
 import Head from 'next/head'
+import { ModalStateProvider } from "../lib/modalState";
 
 function MyApp({ Component, pageProps }) {
   if (process.browser) {
     document.body.classList.add("loaded")
-}  
-  //pwa
+} 
+  //state provider
+  //pwa in head
   //fontawesome icons
   return (
     <SSRProvider>
-      <NavStateProvider>
+      <ModalStateProvider>
       
       <Head>
         <link rel="manifest" href="/manifest.json" />
@@ -23,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         <Script src="https://kit.fontawesome.com/0bae28e39f.js" crossOrigin="anonymous"></Script> 
         <Component {...pageProps} />
       </Page>
-      </NavStateProvider>
+      </ModalStateProvider>
     </SSRProvider>
 
   )

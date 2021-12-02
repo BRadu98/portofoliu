@@ -3,8 +3,11 @@ import styled from 'styled-components';
 const ContactStyles = styled.section`
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   color: var(--white);
-
-  padding: 2rem;
+  /* padding: 2rem; */
+  h2 {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
   .fx-row {
     display: flex;
     
@@ -54,8 +57,14 @@ const ContactStyles = styled.section`
     color: var(--main);
     padding: 1rem;
     width: calc(100% - 2rem);
+    fieldset {
+      border: none;
+    }
+    textarea {
+      resize: none;
+    }
     .form-group,
-    .comment-group {
+    .message-group {
       padding: 0.5rem;
       input,textarea {
         width: calc(100% - 1.75rem); 

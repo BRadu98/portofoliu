@@ -7,14 +7,22 @@ import Footer from '../components/Footer'
 import BgTopStyles from '../components/styles/BgTopStyles'
 import BgBotStyles from '../components/styles/BgBotStyles'
 import TechStack from '../components/TechStack'
+// import { useModal } from '../lib/modalState'
+// import Modal from '../components/Modal'
+
 
 export default function App() {
+
+  // const { modalOpen, closeModal } = useModal();
+
   return (
-    <div>
+    <>
+      
       <Head>
         <title>Baloi Radu - Web Developer</title>
         <meta name="description" content="Web Developer Portofolio Website"/>
       </Head>
+    
 
       <main >
         <Home/>
@@ -35,6 +43,8 @@ export default function App() {
 
       <Footer/>
       <BgTopStyles/>
-    </div>
+
+      {/* {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />} */}
+    </>
   )
 }

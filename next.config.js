@@ -25,6 +25,7 @@ const headers = async () => {
 
 module.exports = withPWA({
   reactStrictMode: true,
+  
   pwa: {
     dest: "public",
     register: true,
