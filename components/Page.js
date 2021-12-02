@@ -107,9 +107,6 @@ const GlobalStyles = createGlobalStyle`
   /* * * * * * * {
     background-color: red;
   } */
-  body {
-    position: relative;
-  }
 `;
 
 
@@ -126,7 +123,6 @@ export default function Page({ children }) {
       <Nav />
       <InnerStyles>{children}</InnerStyles>
       {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
-
     </>
   );
 }

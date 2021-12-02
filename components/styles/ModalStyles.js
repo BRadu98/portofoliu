@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const StyledModal = styled(motion.div)`
-  background-color: var(--secondary); //fix
+  background-color: var(--secondary);
   position: fixed;
   transform: translate(-50%, -50%);
   width: clamp(50%,700px,90%);

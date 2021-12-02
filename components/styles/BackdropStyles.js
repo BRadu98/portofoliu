@@ -12,8 +12,6 @@ const StyledBackdrop = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  
-
 `;
 
 export default StyledBackdrop;

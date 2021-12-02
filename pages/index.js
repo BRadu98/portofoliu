@@ -15,20 +15,21 @@ export default function App() {
 
   // const { modalOpen, closeModal } = useModal();
 
+
+
   return (
-    <>
+    <div>
       
       <Head>
         <title>Baloi Radu - Web Developer</title>
         <meta name="description" content="Web Developer Portofolio Website"/>
       </Head>
     
-
       <main >
         <Home/>
         <BgBotStyles/>
         
-        <KeyProjects/>
+        <KeyProjects />
 
         <BgTopStyles/>
         <Projects/>
@@ -45,6 +46,6 @@ export default function App() {
       <BgTopStyles/>
 
       {/* {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />} */}
-    </>
+    </div>
   )
 }
