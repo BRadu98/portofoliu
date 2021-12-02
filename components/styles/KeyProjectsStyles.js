@@ -39,11 +39,24 @@ export const KeyProjectsStyles = styled.section`
       margin-top: 0;
       margin-bottom: 0.2rem;
     }
-    h4 {
-      color: var(--main);
-      margin-top: 0;
-      margin-bottom: 0;
+    .kpDetails {
+      h4 {
+        color: var(--main);
+        margin-top: 0;
+        margin-bottom: 0;
+        min-height: 50px;
+      }
+      .detailsBtn {
+        font-weight:450;
+        background-color: var(--main);
+        color: var(--white);
+        border-radius: 6px;
+        padding: 1rem;
+        width: 200px;
+        margin-top:1rem;
+      }
     }
+
   }
 `;
 
@@ -55,8 +68,15 @@ export const KeyProjectDetailsStyles = styled.div`
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   line-height: 1.5rem;
+  h2 {
+    line-height: 3rem;
+  }
   h2,h3 {
     color: var(--main);
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
   .link-Btns {
     display: flex;

@@ -36,7 +36,6 @@ const KeyProject = ({project}) => {
       </div>
       <div className="kpDetails">
         <h4>{stack}</h4>
-        {/* <p>{project.description}</p> */}
         <motion.button onClick={handleClick} className="detailsBtn"  
             whileHover={{scale:1.1}}
             whileTap={{scale:0.9}}> 

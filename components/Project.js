@@ -42,23 +42,26 @@ const Project = ({project, type}) => {
               <h4>{stack}</h4>
               <div className="projectBtnsContianer">
                 {live && !!live && (
-                  <motion.button 
-                    className="projectBtn"
-                    whileHover={{scale:1.1}}
-                    whileTap={{scale:0.9}}
-                    ><a href={live} target="_blank" rel="noreferrer noopener">
-                      Live
-                    </a></motion.button>
+                  <a href={live} target="_blank" rel="noreferrer noopener">
+                    <motion.button 
+                      className="projectBtn"
+                      whileHover={{scale:1.1}}
+                      whileTap={{scale:0.9}}
+                      >
+                        Live
+                    </motion.button>
+                  </a>
                 )}
                 {git && !!git && (
-                  <motion.button 
-                    className="projectBtn"
-                    whileHover={{scale:1.1}}
-                    whileTap={{scale:0.9}}
-                    ><a href={git} target="_blank" rel="noreferrer noopener">
-                      Code
-                    </a>
-                  </motion.button>
+                  <a href={live} target="_blank" rel="noreferrer noopener">
+                    <motion.button 
+                      className="projectBtn"
+                      whileHover={{scale:1.1}}
+                      whileTap={{scale:0.9}}
+                      >
+                        Code
+                    </motion.button>
+                  </a>
                 )}
               </div>
            </div>

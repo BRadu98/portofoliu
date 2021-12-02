@@ -9,23 +9,26 @@ const KeyProjectDetails = ({title, stack, description, git, live}) => {
       <p>{description}</p>
       <div className="link-Btns">
       {live && !!live && (
+        <a href={live} target="_blank" rel="noreferrer noopener">
         <motion.button 
           className="link-btn"
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}
-          ><a href={live} target="_blank" rel="noreferrer noopener">
+          >
             Live
-          </a></motion.button>
+          </motion.button>
+          </a>
                 )}
       {git && !!git && (
-        <motion.button 
+        <a href={git} target="_blank" rel="noreferrer noopener"><motion.button 
           className="link-btn"
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}
-          ><a href={git} target="_blank" rel="noreferrer noopener">
+          >
             Code
-          </a>
-        </motion.button>)}
+          
+        </motion.button>
+        </a>)}
         </div>
     </KeyProjectDetailsStyles>
   )

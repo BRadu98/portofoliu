@@ -5,7 +5,7 @@ const StyledModal = styled(motion.div)`
   background-color: var(--white);
   position: fixed;
   transform: translate(-50%, -50%);
-  width: clamp(50%,700px,90%);
+  width: clamp(50%,700px,70%);
   min-height: 250px;
   padding: 0 2rem;
   border-radius: 10px;

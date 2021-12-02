@@ -111,6 +111,11 @@ const ProjectsStyles = styled.section`
               flex-wrap: wrap;
               justify-content: space-around;
               align-items: flex-end;
+              a, a:hover, a:focus-within{
+                  width:40%;
+                  color: black;
+                  border-bottom: none;
+                }
               .projectBtn{
                 padding: 0.5rem;
                 font-size: 1.1rem;
@@ -118,10 +123,6 @@ const ProjectsStyles = styled.section`
                 background: var(--secondary);
                 color: black;
                 font-weight: 650;
-                width: 40%;
-                a{
-                  color: black;
-                }
               }
             }
           }
