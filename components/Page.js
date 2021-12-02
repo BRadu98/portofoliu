@@ -2,8 +2,8 @@ import propTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
-import { useModal } from '../lib/modalState'
-import Modal from '../components/Modal'
+// import { useModal } from '../lib/modalState'
+// import Modal from '../components/Modal'
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -15,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html, body {
-    height: 100%;
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -115,15 +114,15 @@ const InnerStyles = styled.div`
 `;
 
 export default function Page({ children }) {
-  const { modalOpen, closeModal } = useModal();
+  // {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
+
   return (
-    <>
+    <div>
       <GlobalStyles />
       <Header />
       <Nav />
       <InnerStyles>{children}</InnerStyles>
-      {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
-    </>
+    </div>
   );
 }
 
