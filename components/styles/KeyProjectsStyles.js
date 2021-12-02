@@ -26,6 +26,7 @@ export const KeyProjectsStyles = styled.section`
      box-shadow: 0 0 5px 4px var(--main);
      border-radius: 6px;
      overflow-wrap: break-all;
+     max-width: 340px;
      .kpImgContainer {
       max-width: 275px;
       max-height: 550px;
