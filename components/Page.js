@@ -2,8 +2,6 @@ import propTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
-// import { useModal } from '../lib/modalState'
-// import Modal from '../components/Modal'
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -114,7 +112,6 @@ const InnerStyles = styled.div`
 `;
 
 export default function Page({ children }) {
-  // {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
 
   return (
     <div>

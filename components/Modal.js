@@ -1,6 +1,6 @@
-// import {motion} from "framer-motion"
 import Backdrop from "./Backdrop"
 import StyledModal from "./styles/ModalStyles"
+import ReactDOM from "react-dom"
 
 const dropIn = {
   hidden: {
@@ -25,20 +25,27 @@ const dropIn = {
 
 //stop propagation => not closing modal when contents are clicked
 const Modal = ({handleClose, text}) => {
-  return (
-    <Backdrop onClick={handleClose}>
-      <StyledModal
-        onClick={(e) => e.stopPropagation()}
-        variants={dropIn}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-      >
-        <p>{text}</p>
-        <button onClick={handleClose}>Close</button>
-      </StyledModal>
-    </Backdrop>
-  )
+  if (process.browser) {
+    const portalContainer = document.getElementById('portal');
+    return ReactDOM.createPortal(
+      <Backdrop onClick={handleClose}>
+        <StyledModal
+          onClick={(e) => e.stopPropagation()}
+          variants={dropIn}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
+          <p>{text}</p>
+          <button onClick={handleClose}>Close</button>
+        </StyledModal>
+      </Backdrop>,
+      portalContainer
+    )
+  } else {
+    return null;
+  }
+  
 }
 
 export default Modal;
