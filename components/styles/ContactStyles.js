@@ -10,6 +10,7 @@ const ContactStyles = styled.section`
   }
   .fx-row {
     display: flex;
+    margin-bottom: 2rem;
     
     @media(max-width: 800px) {
       flex-direction: column;
