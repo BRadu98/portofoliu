@@ -61,12 +61,11 @@ export const KeyProjectsStyles = styled.section`
 `;
 
 export const KeyProjectDetailsStyles = styled.div`
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+
   line-height: 1.5rem;
   h2 {
     line-height: 3rem;
