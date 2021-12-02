@@ -80,6 +80,7 @@ export const KeyProjectDetailsStyles = styled.div`
   .link-Btns {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 80%;
     a,
     a:hover,
