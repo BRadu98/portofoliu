@@ -7,7 +7,7 @@ import useForm from '../lib/useForm'
 export default function Contact() {
 
 
-  const { inputs, handleChange, clearForm } = useForm({
+  const { inputs, handleChange, resetForm } = useForm({
     message: '',
     email: '',
     name: '',
@@ -21,19 +21,16 @@ export default function Contact() {
     const name = e.target.name.value
     const email = e.target.email.value
     const msg = e.target.message.value
-    console.log("before", modalOpen)
 
     // console.log(name,email,msg)
   
     modalOpen ? closeModal() : openModal()
 
-    //send msg then
+    //todo send msg then
     //const res = 
-    clearForm()
+    resetForm()
    
   }
-
-  //submitconst msg = e.target.message.value;
 
   return (
     <ContactStyles id="contact">
@@ -57,7 +54,7 @@ export default function Contact() {
               </div>
               <div className="form-group">
                 <label id="email-label" htmlFor="email">Email</label><br/>
-                <input onChange={handleChange} value={inputs.email} type="text" id="email" name="email" placeholder="name@example.com" required className="form-control"/><br/>
+                <input onChange={handleChange} value={inputs.email} type="email" id="email" name="email" placeholder="name@example.com" required className="form-control"/><br/>
               </div>
               <div className="message-group">
                 <label id="comments-label" htmlFor="comments">Message</label><br/>

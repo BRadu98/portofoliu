@@ -1,6 +1,7 @@
 import Backdrop from "./Backdrop"
 import StyledModal from "./styles/ModalStyles"
 import ReactDOM from "react-dom"
+import {motion} from "framer-motion"
 
 const dropIn = {
   hidden: {
@@ -24,7 +25,7 @@ const dropIn = {
 }
 
 //stop propagation => not closing modal when contents are clicked
-const Modal = ({handleClose, text}) => {
+const Modal = ({handleClose, children}) => {
   if (process.browser) {
     const portalContainer = document.getElementById('portal');
     return ReactDOM.createPortal(
@@ -36,8 +37,12 @@ const Modal = ({handleClose, text}) => {
           animate="visible"
           exit="exit"
         >
-          <p>{text}</p>
-          <button onClick={handleClose}>Close</button>
+          {children}
+          <motion.button onClick={handleClose} className="confirm"  
+            whileHover={{scale:1.1}}
+            whileTap={{scale:0.9}}> 
+            Ok
+          </motion.button>
         </StyledModal>
       </Backdrop>,
       portalContainer

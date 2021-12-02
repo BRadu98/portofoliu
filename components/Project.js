@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
 // type -> index % 3
 
@@ -16,9 +17,9 @@ const Project = ({project, type}) => {
       break;
   }
 
-  let stack = project.stack.join(" | ")
-  let git = project.gitLink
-  let live = project.liveLink
+  const stack = project.stack.join(" | ")
+  const git = project.gitLink
+  const live = project.liveLink
   
   return (
     <div className="card">
@@ -41,10 +42,23 @@ const Project = ({project, type}) => {
               <h4>{stack}</h4>
               <div className="projectBtnsContianer">
                 {live && !!live && (
-                  <button className="projectBtn"><a href={live} target="_blank" rel="noreferrer noopener">Live</a></button>
+                  <motion.button 
+                    className="projectBtn"
+                    whileHover={{scale:1.1}}
+                    whileTap={{scale:0.9}}
+                    ><a href={live} target="_blank" rel="noreferrer noopener">
+                      Live
+                    </a></motion.button>
                 )}
                 {git && !!git && (
-                  <button className="projectBtn"><a href={git} target="_blank" rel="noreferrer noopener">Code</a></button>
+                  <motion.button 
+                    className="projectBtn"
+                    whileHover={{scale:1.1}}
+                    whileTap={{scale:0.9}}
+                    ><a href={git} target="_blank" rel="noreferrer noopener">
+                      Code
+                    </a>
+                  </motion.button>
                 )}
               </div>
            </div>

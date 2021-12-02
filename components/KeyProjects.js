@@ -1,4 +1,4 @@
-import KeyProjectsStyles from './styles/KeyProjectsStyles'
+import {KeyProjectsStyles} from './styles/KeyProjectsStyles' 
 import {projectsArray} from '../projectsArray';
 import KeyProject from './KeyProject';
 

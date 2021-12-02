@@ -12,7 +12,7 @@ import Modal from '../components/Modal'
 
 export default function App() {
 
-  const {modalOpen, closeModal} = useModal()
+  const {modalOpen, closeModal, modalContent} = useModal()
 
   return (
     <div>
@@ -41,7 +41,9 @@ export default function App() {
 
       <Footer/>
       <BgTopStyles/>
-      {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal} />}
+      {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal}>
+        {modalContent}
+        </Modal>}
 
     </div>
   )
