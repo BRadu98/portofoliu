@@ -25,7 +25,7 @@ export const projectsArray = [
     gitLink: "",
     category: "web",
     image: {lesp},
-    stack: ["NextJS","ReactJS","HTML","CSS","MongoDB","KeystoneJS","Nginx"],
+    stack: ["NextJS","ReactJS","Styled Components","HTML","CSS","MongoDB","KeystoneJS","Nginx"],
     description: "NextJS website with dynamic generated pages,allows the user to signup, login, find, add to cart and order products, check out prices and stock for products and services, recieve confirmation order email and send emails to the owner. Through KeystoneJS the owner can add/delete/edit contents from the database and store images to cloudinary"
   },
   {
@@ -36,7 +36,7 @@ export const projectsArray = [
     gitLink: "https://github.com/BRadu98/portofoliu",
     category: "web",
     image: {pv2},
-    stack: ["NextJS","ReactJS","HTML","CSS"],
+    stack: ["NextJS","ReactJS","Styled Components","HTML","CSS"],
     description: "NextJS PWA showcasing my projects. It takes the projects from an array and generates the Key Projects and All Projects sections",
   },
   {

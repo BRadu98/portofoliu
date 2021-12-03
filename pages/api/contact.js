@@ -42,7 +42,6 @@ async function sendContactEmail(from,message,name) {
   }
 }
 
-//export default async function contact(req, res) {
 export default async function contact(req, res) {
   try {
     const data = req.body

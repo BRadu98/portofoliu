@@ -80,7 +80,8 @@ export const KeyProjectDetailsStyles = styled.div`
   }
   .link-Btns {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
     width: 80%;
     a,
