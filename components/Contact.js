@@ -18,19 +18,30 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.dir(inputs)
-    const name = e.target.name.value
-    const email = e.target.email.value
-    const msg = e.target.message.value
-
-    // console.log(name,email,msg)
-
-  setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, }}>The message has been sent</h3>);
+    // console.dir(inputs)
+    // const name = e.target.name.value
+    // const email = e.target.email.value
+    // const msg = e.target.message.value
+    
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(inputs)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, }}>The message has been sent</h3>);
+        resetForm()
+      } else {
+        console.log('Response - anything else')
+        setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, color:'red' }}>There was an error, the message was not sent</h3>);
+      }
+    })
     modalOpen ? closeModal() : openModal()
-
-    //todo send msg then
-    //const res = 
-    resetForm()
    
   }
 
