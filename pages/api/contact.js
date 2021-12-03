@@ -42,7 +42,7 @@ async function sendContactEmail(from,message,name) {
   }
 }
 
-export default function (req, res) {
+export default function contact(req, res) {
   try {
     const data = req.body
     res.setHeader('Content-Type', 'application/json');
