@@ -27,6 +27,9 @@ export const KeyProjectsStyles = styled.section`
      border-radius: 6px;
      overflow-wrap: break-all;
      width: 320px;
+     @media(max-width: 400px) {
+        width:240px;
+      }
      .kpImgContainer {
       max-width: 275px;
       max-height: 550px;
@@ -67,7 +70,7 @@ export const KeyProjectDetailsStyles = styled.div`
   flex-direction: column;
   align-items: center;
 
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   h2 {
     line-height: 3rem;
   }
@@ -77,13 +80,16 @@ export const KeyProjectDetailsStyles = styled.div`
   }
   p {
     text-align: center;
+    overflow-y: scroll;
+    max-height: 100px;
   }
   .link-Btns {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: 0rem;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%; //80%
     a,
     a:hover,
     a:focus-within {
@@ -98,7 +104,7 @@ export const KeyProjectDetailsStyles = styled.div`
     border-radius: 6px;
     padding: 1rem;
     width: 200px;
-    margin-bottom: 80px;
+    min-width: 120px;
     margin-top: 20px;
   }
 `
