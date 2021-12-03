@@ -13,6 +13,7 @@ const StyledModal = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
 
   .confirm {
     justify-self: flex-end;

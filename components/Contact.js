@@ -34,11 +34,11 @@ export default function Contact() {
       console.log('Response received')
       if (res.status === 200) {
         console.log('Response succeeded!')
-        setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, }}>The message has been sent</h3>);
+        setModalContent(<h3 style={{ fontWeight:450, fontSize: 23 }}>The message has been sent</h3>);
         resetForm()
       } else {
         console.log('Response - anything else')
-        setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, color:'red' }}>There was an error, the message was not sent</h3>);
+        setModalContent(<h3 style={{ fontWeight:450, fontSize: 23 , color:'red' }}>There was an error, the message was not sent</h3>);
       }
     })
     modalOpen ? closeModal() : openModal()

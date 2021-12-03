@@ -65,14 +65,14 @@ export const KeyProjectsStyles = styled.section`
 `;
 
 export const KeyProjectDetailsStyles = styled.div`
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  line-height: 1.2rem;
+  line-height: 1.3rem;
   h2 {
-    line-height: 3rem;
+    line-height: 2.8rem;
   }
   h2,h3 {
     color: var(--main);
@@ -87,7 +87,7 @@ export const KeyProjectDetailsStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0rem;
+    gap: 0;
     flex-wrap: wrap;
     width: 100%; //80%
     a,
@@ -99,12 +99,13 @@ export const KeyProjectDetailsStyles = styled.div`
   }
   .link-btn {
     font-weight:450;
+    margin: 1rem;
     background-color: var(--main);
     color: var(--white);
     border-radius: 6px;
     padding: 1rem;
     width: 200px;
     min-width: 120px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 `
