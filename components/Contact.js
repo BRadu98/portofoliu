@@ -14,16 +14,18 @@ export default function Contact() {
   });
 
   
-  const { modalOpen, openModal, closeModal } = useModal();
+  const { modalOpen, openModal, closeModal, setModalContent } = useModal();
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.dir(inputs)
     const name = e.target.name.value
     const email = e.target.email.value
     const msg = e.target.message.value
 
     // console.log(name,email,msg)
-  
+
+  setModalContent(<h3 style={{ position: 'fixed', fontWeight:450, top: 50, fontSize: 23, }}>The message has been sent</h3>);
     modalOpen ? closeModal() : openModal()
 
     //todo send msg then

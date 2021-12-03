@@ -1,7 +1,6 @@
 import {KeyProjectDetailsStyles} from './styles/KeyProjectsStyles'  
 import {motion} from "framer-motion"
 const KeyProjectDetails = ({title, stack, description, git, live}) => {
-  console.log(live)
   return (
     <KeyProjectDetailsStyles>
       <h2>{title}</h2>
@@ -26,7 +25,6 @@ const KeyProjectDetails = ({title, stack, description, git, live}) => {
           whileTap={{scale:0.9}}
           >
             Code
-          
         </motion.button>
         </a>)}
         </div>
