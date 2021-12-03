@@ -42,13 +42,15 @@ async function sendContactEmail(from,message,name) {
   }
 }
 
+//export default async function contact(req, res) {
 export default function contact(req, res) {
   try {
     const data = req.body
     res.setHeader('Content-Type', 'application/json');
     res.setHeader('Cache-Control', 'max-age=180000');
-    sendContactEmail(data.email, data.message, data.name)
+    await sendContactEmail(data.email, data.message, data.name)
     res.status(200).end(JSON.stringify(data));
+    // res.status(200).end(process.env.MAIL_RECIPIENT);
   } catch (error) {
     res.json(error);
     res.status(405).end();
