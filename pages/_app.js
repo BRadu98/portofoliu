@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <SSRProvider>
       <ModalStateProvider>
-      
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png" />

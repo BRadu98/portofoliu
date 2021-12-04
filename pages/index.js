@@ -9,6 +9,7 @@ import BgBotStyles from '../components/styles/BgBotStyles'
 import TechStack from '../components/TechStack'
 import { useModal } from '../lib/modalState'
 import Modal from '../components/Modal'
+import { AnimatePresence } from 'framer-motion'
 
 export default function App() {
 
@@ -41,9 +42,16 @@ export default function App() {
 
       <Footer/>
       <BgTopStyles/>
+      <AnimatePresence
+        //disable initial animations on children when comp is first rendered
+        initial={false}
+        //only render one comp at a time, the exiting comp will finish its exit animation before entering comp is rendered
+        exitBefpreEnter={true}
+        >
       {modalOpen && <Modal modalOpen={modalOpen} handleClose={closeModal}>
         {modalContent}
         </Modal>}
+        </AnimatePresence>
 
     </div>
   )
