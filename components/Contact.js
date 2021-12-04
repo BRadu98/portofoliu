@@ -40,8 +40,8 @@ export default function Contact() {
         console.log('Response - anything else')
         setModalContent(<h3 style={{ fontWeight:450, fontSize: 23 , color:'red' }}>There was an error, the message was not sent</h3>);
       }
-    })
-    modalOpen ? closeModal() : openModal()
+    }).then(() => modalOpen ? closeModal() : openModal())
+    
    
   }
 
