@@ -12,6 +12,7 @@ const StyledBurger = styled.button`
   width: 1rem;
   height: 2rem;
   background: transparent;
+  color: ${({theme}) => theme.colors.white};
   border: none;
   cursor: pointer;
   padding: 0;
@@ -27,7 +28,7 @@ const StyledBurger = styled.button`
 
   &:hover {
     div {
-      background: ${({theme}) => theme.colors.gradient};
+      background: ${({theme}) => theme.colors.secondary};
     }
   }
   
