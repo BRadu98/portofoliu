@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const StyledModal = styled(motion.div)`
-  background-color: var(--white);
+  background-color: ${({theme}) => theme.colors.white};
   position: fixed;
   transform: translate(-50%, -50%);
   width: clamp(50%,700px,70%);
@@ -18,8 +18,8 @@ const StyledModal = styled(motion.div)`
   .confirm {
     justify-self: flex-end;
     font-weight:450;
-    background-color: var(--main);
-    color: var(--white);
+    background-color: ${({theme}) => theme.colors.main};
+    color: ${({theme}) => theme.colors.white};
     border-radius: 6px;
     padding: 1rem;
     width: 200px;

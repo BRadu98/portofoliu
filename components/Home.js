@@ -1,19 +1,20 @@
 import HomeStyles from '../components/styles/HomeStyles'
 import Image from 'next/image'
-import coding from '../public/coding.png'
+import codinglight from '../public/coding-light.png'
+import codingdark from '../public/coding-dark.png'
 import Container from './styles/ContainerStyles';
 import { Link as LinkScroll } from "react-scroll";
 
 
 export default function Home() {
-  
+  const coding= codinglight;
   return (
     <HomeStyles id="home">
       <Container>
         <div className="fx-row">
           <div className="w50">
             <div>
-              <span className="intro">Hey,&nbsp;&nbsp;I&apos;m Radu</span>
+              <span className="intro">Hey,&nbsp;&nbsp;I&apos;m <span className="name">Radu</span></span>
               <span className="descr">A Web Developer with a can-do attitude.</span>
             </div>
           </div>

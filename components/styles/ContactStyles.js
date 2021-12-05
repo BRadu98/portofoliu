@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const ContactStyles = styled.section`
-  background: var(--gradient-bg);
-  color: var(--white);
+  background: ${({theme}) => theme.colors.gradient};
+  color: ${({theme}) => theme.colors.white};
   h2 {
     margin-top: 0rem;
     margin-bottom: 2rem;
@@ -29,9 +29,9 @@ const ContactStyles = styled.section`
     }
   }
   .contact-heading {
-    background-color: var(--white);
+    background-color: ${({theme}) => theme.colors.white};
     filter: opacity(0.75);
-    color: var(--main);
+    color: ${({theme}) => theme.colors.main};
     text-align: left;
     font-size: 1.7rem;
     font-weight: 500;
@@ -53,8 +53,8 @@ const ContactStyles = styled.section`
     margin: 0;
     font-size: 1.7rem;
     font-weight: 450;
-    background-color: var(--white);
-    color: var(--main);
+    background-color: ${({theme}) => theme.colors.white};
+    color: ${({theme}) => theme.colors.main};
     padding: 1rem;
     width: calc(100% - 2rem);
     fieldset {
@@ -77,8 +77,8 @@ const ContactStyles = styled.section`
     .submit-button {
       width: 100%;
       font-weight: 450;
-      background-color: var(--main);
-      color: var(--white);
+      background-color: ${({theme}) => theme.colors.main};
+      color: ${({theme}) => theme.colors.white};
       border-radius: 6px;
       padding: 1rem;
     }

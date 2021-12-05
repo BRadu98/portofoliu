@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const HomeStyles = styled.section`
-  background:  var(--gradient-bg);
+  background:  ${({theme}) => theme.colors.gradient};
   padding: 7rem 0 0 0; //10rem
-  color: var(--white);
-
+  color: ${({theme}) => theme.colors.white};
+  .name {
+    color: ${({theme}) => theme.colors.secondary};
+  }
   .fx-row {
     display: flex;
     gap: 1rem;

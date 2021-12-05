@@ -27,15 +27,14 @@ const StyledBurger = styled.button`
 
   &:hover {
     div {
-      background: var(--white);
+      background: ${({theme}) => theme.colors.gradient};
     }
   }
   
   div {
     width: 1.8rem;
     height: 0.3rem;
-    /* background: ${({ theme }) => theme.primaryLight}; */
-    background: var(--white); 
+    background: ${({theme}) => theme.colors.white};
 
     border-radius: 10px;
     transition: all 0.3s linear;

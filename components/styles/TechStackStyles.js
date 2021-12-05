@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const TechStackStyles = styled.section`
   margin: 4rem auto;
-  color: var(--main);
+  color: ${({theme}) => theme.colors.main};
   h2 {
       text-align: center;
   }

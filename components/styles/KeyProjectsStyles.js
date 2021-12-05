@@ -23,7 +23,8 @@ export const KeyProjectsStyles = styled.section`
      margin: 1rem auto;
      text-align: center;
      padding: 1.5rem;
-     box-shadow: 0 0 5px 4px var(--main);
+     color: ${({theme}) => theme.colors.main};
+     box-shadow: 0 0 5px 4px;
      border-radius: 6px;
      overflow-wrap: break-all;
      width: 320px;
@@ -39,21 +40,21 @@ export const KeyProjectsStyles = styled.section`
         margin-top: 3rem;
     }
     h3 {
-      color: var(--main);
+      color: ${({theme}) => theme.colors.main};
       margin-top: 0;
       margin-bottom: 0.2rem;
     }
     .kpDetails {
       h4 {
-        color: var(--main);
+        color: ${({theme}) => theme.colors.main};
         margin-top: 0;
         margin-bottom: 0;
         min-height: 50px;
       }
       .detailsBtn {
         font-weight:450;
-        background-color: var(--main);
-        color: var(--white);
+        background-color: ${({theme}) => theme.colors.main};
+        color: ${({theme}) => theme.colors.white};
         border-radius: 6px;
         padding: 1rem;
         width: 200px;
@@ -75,12 +76,12 @@ export const KeyProjectDetailsStyles = styled.div`
     line-height: 2.8rem;
   }
   h2,h3 {
-    color: var(--main);
+    color: ${({theme}) => theme.colors.main};
     text-align: center;
   }
   p {
     text-align: center;
-    color: var(--black);
+    color: ${({theme}) => theme.colors.black};
     overflow-y: scroll;
     max-height: 100px;
   }
@@ -94,15 +95,15 @@ export const KeyProjectDetailsStyles = styled.div`
     a,
     a:hover,
     a:focus-within {
-      color: var(--white);
+      color: ${({theme}) => theme.colors.white};
       border-bottom: none;
     }
   }
   .link-btn {
     font-weight:450;
     margin: 1rem;
-    background-color: var(--main);
-    color: var(--white);
+    background-color: ${({theme}) => theme.colors.main};
+    color: ${({theme}) => theme.colors.white};
     border-radius: 6px;
     padding: 1rem;
     width: 200px;

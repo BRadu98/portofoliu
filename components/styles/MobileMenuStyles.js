@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 const StyledMobileMenu = styled.div`
-  /* background: ${({ theme }) => theme.primaryLight}; */
-  /* background: var(--main); */
-  background: var(--gradient-bg);
+  background: ${({theme}) => theme.colors.gradient};
   box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
   text-align: left;
   padding: 1rem;
@@ -39,7 +37,7 @@ const StyledMobileMenu = styled.div`
     
     &:hover,
     &:focus {
-      color: var(--secondary);
+      color: ${({theme}) => theme.colors.secondary};
       outline: none;
       text-decoration: none;
     }

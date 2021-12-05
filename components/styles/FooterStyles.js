@@ -33,8 +33,8 @@ export const FooterLinks = styled.div`
   }
   a:hover,
   a:focus-within {
-    color: var(--black);
-    background-color: var(--secondary);
+    color: ${({theme}) => theme.colors.black};
+    background-color: ${({theme}) => theme.colors.secondary};
     transform: translateY(5px);
     border-bottom: none;
   }

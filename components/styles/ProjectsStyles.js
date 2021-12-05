@@ -4,9 +4,9 @@ const ProjectsStyles = styled.section`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background:  var(--gradient-bg);
+  background:  ${({theme}) => theme.colors.gradient};
   width: 100%;
-  color: var(--white);
+  color: ${({theme}) => theme.colors.white};
   .portofolio-heading {
     text-align: center;
     margin-top: -40px;
@@ -17,7 +17,7 @@ const ProjectsStyles = styled.section`
       margin-bottom: 30px
     }
     code {
-      color: var(--secondary);
+      color: ${({theme}) => theme.colors.secondary};
       word-wrap: break-word;
       font-weight: 500;
       font-size: 1.15rem;
@@ -29,8 +29,8 @@ const ProjectsStyles = styled.section`
     flex-wrap: wrap;
     width: 100%;
     .filterBtn {
-      color: var(--white);
-      border: 2px solid var(--white);
+      color: ${({theme}) => theme.colors.white};
+      border: 2px solid;
       background: none;
       padding: 0.75rem;
       border-radius: 6px;
@@ -39,12 +39,13 @@ const ProjectsStyles = styled.section`
     }
     .filterBtn:focus-within,
     .filterBtn:hover {
-      color: var(--secondary);
-      border-color: var(--secondary);
+      color: ${({theme}) => theme.colors.secondary};
+      border-color: ${({theme}) => theme.colors.secondary};;
     }
   }
   .portofolioContainer {
-    border: 3px solid var(--white);
+    color: ${({theme}) => theme.colors.white};
+    border: 3px solid;
     border-radius: 6px;
     margin: 1.5rem auto;
     min-width: 300px;
@@ -70,7 +71,8 @@ const ProjectsStyles = styled.section`
       width: 300px;
       height: 300px;
       border-radius: 10px;
-      box-shadow: 0 0 5px 5px var(--secondary);
+      color: ${({theme}) => theme.colors.secondary}; //
+      box-shadow: 0 0 5px 5px; //secondary)
       overflow: hidden;
       .content{
         width:100%;
@@ -81,7 +83,7 @@ const ProjectsStyles = styled.section`
           position:absolute;
           width:100%;
           height:100%;
-          background-color: var(--main);
+          background-color: ${({theme}) => theme.colors.main};
           transition:0.5s;
           z-index:1;
           opacity: 95%;
@@ -113,15 +115,15 @@ const ProjectsStyles = styled.section`
               align-items: flex-end;
               a, a:hover, a:focus-within{
                   width:40%;
-                  color: var(--black);
+                  color: ${({theme}) => theme.colors.black};
                   border-bottom: none;
                 }
               .projectBtn{
                 padding: 0.5rem;
                 font-size: 1.1rem;
                 border-radius: 6px;
-                background: var(--secondary);
-                color: var(--black);
+                background: ${({theme}) => theme.colors.secondary};
+                color: ${({theme}) => theme.colors.black};
                 font-weight: 650;
               }
             }

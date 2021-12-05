@@ -1,35 +1,34 @@
 import propTypes from 'prop-types';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
 
-const GlobalStyles = createGlobalStyle`
-  :root {
-    --gradient-bg-light: linear-gradient(to right, rgba(223,255,25,1), rgba(254,255,146,1), rgba(223,255,25,1));
-    --main2: #FFFB0A;
-    --secondary2: #5F0A87;
-    --white2: black;
-    --black2: #fff;
-    --mainOpc2: #FFFB0Af4;
-
-    /* --main: var(--main2); 
-    --mainOpc: var(--mainOpc2); 
-    --secondary: var(--secondary2); 
-    --white: var(--white2); 
-    --black: var(--black2); 
-    --gradient-bg: var(--gradient-bg-light); */
-
-    --main: #2F2A61; //purple
-    --mainOpc: #2F2A61f4;
-    --secondary: #5AFF15; //green
-    --white: #fff;
-    --black: black;
-    --gradient-bg: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+const light = {
+  colors: {
+    main: "#2F2A61",
+    mainOpc: "#2F2A61f4",
+    secondary: "#5AFF15",
+    white: "#fff",
+    black: "#000000",
+    gradient: "linear-gradient(to right, #24243e, #302b63, #0f0c29)",
   }
+}
 
+const dark = {
+  colors: {
+    main: "#FFFB0A",
+    mainOpc: "#FFFB0Af4",
+    secondary: "#5F0A87",
+    white: "#000000",
+    black: "#fff",
+    gradient: "linear-gradient(to right, rgba(223,255,25,1), rgba(254,255,146,1), rgba(223,255,25,1))",
+  }
+}
+
+const GlobalStyles = createGlobalStyle`
   html, body {
-    background-color: var(--white);
-    color: var(--white);
+    background-color: ${({theme}) => theme.colors.white};
+    color: ${({theme}) => theme.colors.white};
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -45,8 +44,8 @@ const GlobalStyles = createGlobalStyle`
   a:hover,
   a:focus-within {
     cursor: pointer;
-    color: var(--secondary);
-    border-bottom: 4px solid var(--secondary);
+    color: ${({theme}) => theme.colors.secondary};
+    border-bottom: 4px solid;
   }
   
   .no-border:hover,
@@ -86,22 +85,22 @@ const GlobalStyles = createGlobalStyle`
     /* box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%); */
   }
   .dark-arrow {
-    color: var(--main);
-    background-color: var(--white);
+    color: ${({theme}) => theme.colors.main};
+    background-color: ${({theme}) => theme.colors.white};
   }
   .light-arrow {
-    color: var(--white);
-    background-color: var(--main);
+    color:${({theme}) => theme.colors.white};
+    background-color: ${({theme}) => theme.colors.main};
   }
   .scroll-arrow:hover,
   .scroll-arrow:focus-within,
   .scroll-arrow span:hover,
   .scroll-arrow span:focus-within {
-    background-color: var(--secondary);
-    color: var(--black);
+    background-color: ${({theme}) => theme.colors.secondary};
+    color: ${({theme}) => theme.colors.black};
   }
 
-  //User
+  //User preferences
   @media (prefers-reduced-motion: reduce) {
     * {
       animation-duration: 0.01ms !important;
@@ -117,9 +116,6 @@ const GlobalStyles = createGlobalStyle`
   something a:hover,
   something ul li a:focus-within { }
   } */
-  /* * * * * * * {
-    background-color: red;
-  } */
 `;
 
 
@@ -128,14 +124,17 @@ const InnerStyles = styled.div`
 `;
 
 export default function Page({ children }) {
-
+  let theme = light;  
   return (
-    <div>
-      <GlobalStyles />
-      <Header />
-      <Nav />
-      <InnerStyles>{children}</InnerStyles>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header />
+        <Nav />
+        <InnerStyles>{children}</InnerStyles>
+      </>
+    </ThemeProvider>
+
   );
 }
 

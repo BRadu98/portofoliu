@@ -8,7 +8,7 @@ const NavStyles = styled.nav`
   z-index: 2;
   height: 70px;
   min-height: 70px;
-  background:  var(--gradient-bg);
+  background:  ${({theme}) => theme.colors.gradient};
   padding: 0 1rem;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
   
@@ -58,9 +58,8 @@ const NavStyles = styled.nav`
   }
 
   .active {
-    color: var(--secondary);
-    border-bottom: 4px solid var(--secondary);
-    position: relative;
+    color: ${({theme}) => theme.colors.secondary};
+    border-bottom: 4px solid;
   }
 `;
 
