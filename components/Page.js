@@ -2,12 +2,13 @@ import propTypes from 'prop-types';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Nav from './Nav';
+import { useModal } from '../lib/modalState';
 
 const light = {
   colors: {
     main: "#2F2A61",
     mainOpc: "#2F2A61f4",
-    secondary: "#5AFF15",
+    secondary: "#FFFB0A", //"#5AFF15",
     white: "#fff",
     black: "#000000",
     gradient: "linear-gradient(to right, #24243e, #302b63, #0f0c29)",
@@ -124,7 +125,8 @@ const InnerStyles = styled.div`
 `;
 
 export default function Page({ children }) {
-  let theme = light;  
+  const { lightmode } = useModal()
+  const theme = lightmode ? light : dark  
   return (
     <ThemeProvider theme={theme}>
       <>

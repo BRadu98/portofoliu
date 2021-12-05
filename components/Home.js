@@ -4,10 +4,11 @@ import codinglight from '../public/coding-light.png'
 import codingdark from '../public/coding-dark.png'
 import Container from './styles/ContainerStyles';
 import { Link as LinkScroll } from "react-scroll";
-
+import { useModal } from '../lib/modalState';
 
 export default function Home() {
-  const coding= codinglight;
+  const { lightmode } = useModal()
+  const coding = lightmode ? codinglight : codingdark;
   return (
     <HomeStyles id="home">
       <Container>

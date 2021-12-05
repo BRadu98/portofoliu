@@ -5,6 +5,7 @@ import { useOnClickOutside } from "../lib/useOnClickOutside";
 import MobileMenu from './MobileMenu';
 import Burger from './Burger';
 import DesktopMenu from "./DesktopMenu";
+import { useModal } from "../lib/modalState";
 
 import { useState, useEffect, useRef } from 'react';
 
@@ -55,10 +56,13 @@ export default function Nav() {
     }
   },[windowWidth])
 
+  const { lightmode, setLightmode } = useModal()
+
   return (
     <NavStyles>
       <div id="nav-c" ref={node}>
-        <LinkScroll className="brand" smooth spy to="home" offset={-170}>Baloi Radu</LinkScroll>
+        <LinkScroll className="brand" smooth spy to="home" offset={-170}
+        onClick={() => setLightmode(!lightmode)}>Baloi Radu</LinkScroll>
         <div id="fgrow"></div>
         <DesktopMenu visible={!renderMobileNav}/>
         <Burger open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
