@@ -56,13 +56,23 @@ export default function Nav() {
     }
   },[windowWidth])
 
+
+  const handleThemeChange = () => {
+    if (typeof window !== "undefined") { 
+      localStorage.setItem("darkmode", lightmode)
+      setLightmode(!lightmode)
+    }
+  
+  }
+   
   const { lightmode, setLightmode } = useModal()
+ 
 
   return (
     <NavStyles>
       <div id="nav-c" ref={node}>
         <LinkScroll className="brand" smooth spy to="home" offset={-170}
-        onClick={() => setLightmode(!lightmode)}>Baloi Radu</LinkScroll>
+        onClick={handleThemeChange}>Baloi Radu</LinkScroll>
         <div id="fgrow"></div>
         <DesktopMenu visible={!renderMobileNav}/>
         <Burger open={showMobileMenu} setOpen={setShowMobileMenu} visible={renderMobileNav}/>
