@@ -57,16 +57,17 @@ export default function Nav() {
   },[windowWidth])
 
 
+  const { lightmode, setLightmode } = useModal()
+  
   const handleThemeChange = () => {
     if (typeof window !== "undefined") { 
-      localStorage.setItem("darkmode", lightmode)
-      setLightmode(!lightmode)
+      console.log('lm was: ',lightmode)
+      const before = lightmode
+      localStorage.setItem("darkmode", before)
+      setLightmode(!before)
     }
-  
   }
    
-  const { lightmode, setLightmode } = useModal()
- 
 
   return (
     <NavStyles>

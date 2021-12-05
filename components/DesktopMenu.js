@@ -1,4 +1,3 @@
-import React from 'react'
 import { bool } from 'prop-types';
 import { Link as LinkScroll } from "react-scroll";
 import StyledDesktopMenu from "./styles/DesktopMenuStyles";
