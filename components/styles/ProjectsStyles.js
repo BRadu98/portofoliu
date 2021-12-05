@@ -4,7 +4,7 @@ const ProjectsStyles = styled.section`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background:  var(--gradient-bg);
   width: 100%;
   color: white;
   .portofolio-heading {

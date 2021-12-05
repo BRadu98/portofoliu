@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 const ContactStyles = styled.section`
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: var(--gradient-bg);
   color: var(--white);
-  /* padding: 2rem; */
   h2 {
     margin-top: 0rem;
     margin-bottom: 2rem;

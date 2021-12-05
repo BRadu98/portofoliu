@@ -8,7 +8,7 @@ const NavStyles = styled.nav`
   z-index: 2;
   height: 70px;
   min-height: 70px;
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background:  var(--gradient-bg);
   padding: 0 1rem;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
   

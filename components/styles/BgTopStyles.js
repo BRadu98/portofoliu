@@ -4,7 +4,7 @@ const BgTopStyles = styled.section`
   display: block;
   box-sizing: border-box;
   height: 100px;
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background:  var(--gradient-bg);
   clip-path: ellipse(63% 100% at 50% 100%);
 `;
 

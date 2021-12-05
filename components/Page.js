@@ -6,10 +6,12 @@ import Nav from './Nav';
 const GlobalStyles = createGlobalStyle`
   :root {
     --main: #2F2A61; //purple
-    --secondary: #24ef04; //green
+    --secondary: #5AFF15; //green
     --white: #fff;
     --black: black;
-    --gradient-p: linear-gradient(0deg, rgba(115,57,153,1) 35%, rgba(36,239,4,1) 100%);
+    --gradient-bg: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* --gradient-bg: var(--gradient-bg-light); */
+    --gradient-bg-light: linear-gradient(to right, rgba(223,255,25,1), rgba(254,255,146,1), rgba(223,255,25,1));
   }
 
   html, body {
@@ -54,7 +56,6 @@ const GlobalStyles = createGlobalStyle`
 
   ::placeholder {
     font-style: italic;
-    color: var(--main);
   }
   .scroll-arrow-btn {
     display: block;
@@ -67,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+    /* box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%); */
   }
   .dark-arrow {
     color: var(--main);

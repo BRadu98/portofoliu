@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HomeStyles = styled.section`
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background:  var(--gradient-bg);
   padding: 7rem 0 0 0; //10rem
   color: var(--white);
 

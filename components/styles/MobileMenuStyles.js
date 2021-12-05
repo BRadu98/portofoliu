@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledMobileMenu = styled.div`
   /* background: ${({ theme }) => theme.primaryLight}; */
   /* background: var(--main); */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: var(--gradient-bg);
   box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
   text-align: left;
   padding: 1rem;
