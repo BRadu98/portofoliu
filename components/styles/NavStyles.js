@@ -27,7 +27,6 @@ const NavStyles = styled.nav`
 
   a {
     padding: 1rem 2rem;
-    color: white;
     white-space: nowrap;
   }
 

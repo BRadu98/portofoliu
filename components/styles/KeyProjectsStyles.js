@@ -80,6 +80,7 @@ export const KeyProjectDetailsStyles = styled.div`
   }
   p {
     text-align: center;
+    color: var(--black);
     overflow-y: scroll;
     max-height: 100px;
   }
@@ -93,7 +94,7 @@ export const KeyProjectDetailsStyles = styled.div`
     a,
     a:hover,
     a:focus-within {
-      color: white;
+      color: var(--white);
       border-bottom: none;
     }
   }

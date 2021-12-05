@@ -8,7 +8,7 @@ const StyledBackdrop = styled(motion.div)`
   z-index: 1000;
   height: 100%;
   width: 100%;
-  background: #2F2A61f9;
+  background: var(--mainOpc);
   display: flex;
   align-items: center;
   justify-content: center;

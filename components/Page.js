@@ -5,16 +5,31 @@ import Nav from './Nav';
 
 const GlobalStyles = createGlobalStyle`
   :root {
+    --gradient-bg-light: linear-gradient(to right, rgba(223,255,25,1), rgba(254,255,146,1), rgba(223,255,25,1));
+    --main2: #FFFB0A;
+    --secondary2: #5F0A87;
+    --white2: black;
+    --black2: #fff;
+    --mainOpc2: #FFFB0Af4;
+
+    /* --main: var(--main2); 
+    --mainOpc: var(--mainOpc2); 
+    --secondary: var(--secondary2); 
+    --white: var(--white2); 
+    --black: var(--black2); 
+    --gradient-bg: var(--gradient-bg-light); */
+
     --main: #2F2A61; //purple
+    --mainOpc: #2F2A61f4;
     --secondary: #5AFF15; //green
     --white: #fff;
     --black: black;
     --gradient-bg: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* --gradient-bg: var(--gradient-bg-light); */
-    --gradient-bg-light: linear-gradient(to right, rgba(223,255,25,1), rgba(254,255,146,1), rgba(223,255,25,1));
   }
 
   html, body {
+    background-color: var(--white);
+    color: var(--white);
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

@@ -6,7 +6,7 @@ const ProjectsStyles = styled.section`
   flex-direction: column;
   background:  var(--gradient-bg);
   width: 100%;
-  color: white;
+  color: var(--white);
   .portofolio-heading {
     text-align: center;
     margin-top: -40px;
@@ -29,7 +29,7 @@ const ProjectsStyles = styled.section`
     flex-wrap: wrap;
     width: 100%;
     .filterBtn {
-      color: white;
+      color: var(--white);
       border: 2px solid var(--white);
       background: none;
       padding: 0.75rem;
@@ -113,7 +113,7 @@ const ProjectsStyles = styled.section`
               align-items: flex-end;
               a, a:hover, a:focus-within{
                   width:40%;
-                  color: black;
+                  color: var(--black);
                   border-bottom: none;
                 }
               .projectBtn{
@@ -121,7 +121,7 @@ const ProjectsStyles = styled.section`
                 font-size: 1.1rem;
                 border-radius: 6px;
                 background: var(--secondary);
-                color: black;
+                color: var(--black);
                 font-weight: 650;
               }
             }
