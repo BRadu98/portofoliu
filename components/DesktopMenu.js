@@ -24,7 +24,7 @@ const DesktopMenu = ({ visible }) => {
             </LinkScroll>
           </li>
           <li>
-            <a href="https://www.cakeresume.com/radu-baloi" target="_blank" rel="noreferrer noopener">Resume</a>
+            <a href="/Baloi-Radu-CV.pdf" target="_blank" rel="noreferrer noopener">Resume</a>
           </li>
         </ul>
       </StyledDesktopMenu>
